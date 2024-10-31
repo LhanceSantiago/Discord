@@ -1,0 +1,98 @@
+.footer {
+    &.landing {
+        background: linear-gradient(135deg,#ffffff4d,#ffffff0d),linear-gradient(261deg,#2e1a8e,#0e0e5c);
+    }
+    &.nitro{
+        background-color: #23272a;
+        ul {
+            color: $clr-secondary;
+        }
+        span {
+            background-color: $clr-secondary;
+        }
+    }
+    &.quests {
+        background: linear-gradient(#8037b8 14%, #792fb5 80%);
+    }
+    padding: 6rem 1rem;
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    &__sub {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    &__lang {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: $clr-light;
+        font-size: 1.4rem;
+        img {
+            width: 2.4rem;
+        }
+        i {
+            font-size: 1rem;
+        }
+    }
+    &__icons {
+        display: flex;
+        gap: 2.5rem;
+        i {
+            color: $clr-light;
+            font-size: 2.4rem;
+        }
+    }
+    &__links {
+        @include gridEven(2, 5rem);
+        color: $clr-light;
+        .links__title {
+            padding-bottom: 1rem;
+        }
+        .footer__items {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        a {
+            color: $clr-light;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 0.2rem;
+            }
+        }
+    }
+    &__span {
+        display: block;
+        background-color: $clr-light;
+        width: 100%;
+        height: 1px;
+        margin: 3rem 0;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 12.4rem;
+        }
+        a {
+            padding: 1rem 1.5rem;
+        }
+    }
+    @include mediaQuery($break-md) {
+        &__main {
+            flex-direction: row;
+            justify-content: space-between
+        }
+        &__sub {
+            padding-top: 3rem
+        }
+        &__links {
+            @include gridEven(4, 1rem);
+            }
+    }
+}

@@ -1,0 +1,70 @@
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    background: transparent;
+    border: 1px solid transparent;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5rem;
+    transition: 0.5s ease;
+    &.lightBlue {
+        transition: 0.1s ease;
+        background-color: $clr-secondary;
+        color: $clr-light;
+        padding: 0.5rem;
+        position: relative;
+        bottom: 0;
+        &:hover {
+            bottom: 1px;
+        }
+    }
+    &.white {
+        background-color: $clr-light;
+        color: $clr-dark;
+        padding: 1rem 1.5rem;
+        &:hover {
+            color: $clr-secondary;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+    &.blue {
+        background-color: $clr-primary;
+        color: $clr-light;
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+        }
+    }
+    &.blueBright {
+        transition: 0.1s ease;
+        background-color: $clr-secondary;
+        color: $clr-light;
+        position: relative;
+        bottom: 0;
+        &:hover {
+            box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
+            bottom: 1px;
+            background-color: #8991ee;
+        }
+    }
+    &.blueDark {
+        background-color: $clr-secondary;
+        color: $clr-light;
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+            background-color: #8991ee;
+        }
+    }
+    &.black {
+        transition: 0.1s ease;
+        background-color: $clr-dark;
+        color: $clr-light;
+        position: relative;
+        bottom: 0;
+        &:hover {
+            background-color: #29252A;
+            bottom: 1px;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+        }
+    }
+} 
