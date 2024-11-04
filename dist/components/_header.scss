@@ -2,6 +2,7 @@
         overflow: hidden;
 }
 .header {
+    z-index: 999;
     &.purple {
         background: linear-gradient(#2a0340 14%, #6004a7 80%);
     }

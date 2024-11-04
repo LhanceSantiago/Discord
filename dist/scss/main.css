@@ -68,7 +68,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn.white {
   background-color: #ffffff;
   color: #23272a;
-  padding: 1rem 1.5rem;
 }
 .btn.white:hover {
   color: #5865f2;
@@ -120,11 +119,291 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
+.landingBanner {
+  padding: 8rem 0;
+  position: relative;
+}
+.landingBanner__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.landingBanner__float {
+  position: absolute;
+}
+.landingBanner__float .potion {
+  width: 4rem;
+  height: 4.8rem;
+  position: relative;
+  left: 4rem;
+  bottom: 2rem;
+}
+.landingBanner__float .crown {
+  width: 8.4rem;
+  position: relative;
+  left: 3rem;
+  bottom: 6rem;
+}
+.landingBanner__float .trophy {
+  width: 4.8rem;
+  position: relative;
+  left: 5rem;
+  bottom: 9rem;
+}
+.landingBanner__float .turnip {
+  width: 4rem;
+  filter: blur(2px);
+  position: relative;
+  left: 9rem;
+  bottom: 10rem;
+}
+.landingBanner__float .star {
+  width: 4.7rem;
+  position: relative;
+  left: 13rem;
+  bottom: 5rem;
+}
+.landingBanner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.landingBanner__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  gap: 2rem;
+}
+.landingBanner__main .banner-mobile {
+  width: 29.7rem;
+}
+.landingBanner__main .banner-desktop {
+  display: none;
+}
+.landingBanner__main h1 {
+  font-size: 3rem;
+  font-weight: 1000;
+}
+.landingBanner__main p {
+  width: 40rem;
+}
+.landingBanner__main--buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.landingBanner__main--buttons a {
+  font-weight: 400;
+  font-size: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 3.5rem;
+}
+@media screen and (min-width: 760px) {
+  @keyframes potion {
+    0% {
+      transform: translateX(0);
+      width: 11.2rem;
+    }
+    25% {
+      transform: translateX(-2rem);
+      width: 10.8rem;
+    }
+    50% {
+      transform: translateX(2rem);
+      width: 10.5rem;
+    }
+    75% {
+      transform: translateX(-1rem);
+      width: 10.8rem;
+    }
+    100% {
+      transform: translateX(0);
+      width: 11.2rem;
+    }
+  }
+  @keyframes crown {
+    0% {
+      transform: translateX(0);
+      width: 25rem;
+    }
+    25% {
+      transform: translateX(-2rem);
+      width: 24rem;
+    }
+    50% {
+      transform: translateX(2rem);
+      width: 23.5rem;
+    }
+    75% {
+      transform: translateX(-1rem);
+      width: 24rem;
+    }
+    100% {
+      transform: translateX(0);
+      width: 25rem;
+    }
+  }
+  @keyframes trophy {
+    0% {
+      transform: translateX(0);
+      width: 15rem;
+    }
+    25% {
+      transform: translateX(-2rem);
+      width: 14.5rem;
+    }
+    50% {
+      transform: translateX(2rem);
+      width: 14rem;
+    }
+    75% {
+      transform: translateX(-1rem);
+      width: 14.5rem;
+    }
+    100% {
+      transform: translateX(0);
+      width: 15rem;
+    }
+  }
+  @keyframes turnipStar {
+    0% {
+      transform: translateX(0);
+      width: 7.5rem;
+    }
+    25% {
+      transform: translateX(-2rem);
+      width: 7rem;
+    }
+    50% {
+      transform: translateX(2rem);
+      width: 6.5rem;
+    }
+    75% {
+      transform: translateX(-1rem);
+      width: 7rem;
+    }
+    100% {
+      transform: translateX(0);
+      width: 7.5rem;
+    }
+  }
+  .landingBanner__float .potion {
+    width: 11.2rem;
+    height: auto;
+    left: -8rem;
+    bottom: 10rem;
+    animation: potion 20s ease-in-out infinite;
+  }
+  .landingBanner__float .crown {
+    width: 25rem;
+    left: -5rem;
+    bottom: 15rem;
+    animation: crown 30s ease-in-out infinite;
+  }
+  .landingBanner__float .trophy {
+    width: 15rem;
+    left: 0;
+    bottom: 20rem;
+    animation: trophy 30s ease-in-out infinite;
+  }
+  .landingBanner__float .turnip {
+    width: 7rem;
+    left: 30rem;
+    bottom: 27rem;
+    animation: turnipStar 30s ease-in-out infinite;
+  }
+  .landingBanner__float .star {
+    width: 7rem;
+    left: 47rem;
+    bottom: 20rem;
+    animation: turnipStar 30s ease-in-out infinite;
+  }
+  .landingBanner__main {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .landingBanner__main--buttons {
+    padding: 2rem 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .landingBanner__text {
+    text-align: start;
+  }
+  .landingBanner__text h1 {
+    font-size: 5rem;
+  }
+  .landingBanner__text h1 br {
+    display: none;
+  }
+  .landingBanner__text p {
+    font-size: 2.4rem;
+    width: unset;
+  }
+  .landingBanner .banner-desktop {
+    display: unset;
+    position: relative;
+  }
+  @keyframes upDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  .landingBanner .banner-desktop-img {
+    width: 77rem;
+  }
+  .landingBanner .banner-desktop .banner-add {
+    position: absolute;
+  }
+  .landingBanner .banner-desktop #banner-add-1 {
+    width: 5.7rem;
+    bottom: 1rem;
+    left: 9rem;
+    animation: upDown 5s ease-in-out infinite;
+  }
+  .landingBanner .banner-desktop #banner-add-2 {
+    width: 16.8rem;
+    bottom: 1rem;
+    left: 28rem;
+  }
+  .landingBanner .banner-desktop #banner-add-3 {
+    width: 5rem;
+    bottom: 15rem;
+    left: 33rem;
+    animation: rotate 10s ease-in-out infinite;
+  }
+  .landingBanner .banner-mobile {
+    display: none;
+  }
+}
+
 .unscroll {
   overflow: hidden;
 }
 
 .header {
+  z-index: 999;
   position: fixed;
   width: 100%;
   padding: 1rem 0;
