@@ -1,0 +1,276 @@
+.quests{  
+   
+background:  linear-gradient( #6004a7  14%,#2a0340  90%, );;
+ &__wrapper{
+    padding-bottom: 5rem;
+ }
+&__link{
+        padding-top: 10rem;
+        ul{
+            position: fixed;
+            left: 25%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                padding: 20px 20px;
+         
+                a{
+                    padding: 16px 32px;
+                   background: #ffffff20;
+                   width: 100%;
+                    color: $clr-green;
+                    border-radius: 1rem;
+                    font-weight: 900;
+                }
+                i{
+                    padding-left: 3rem;
+                    color: $clr-light;
+                }
+            }
+        }
+    }
+    .quests__bg-img{
+        img{
+          display: none;
+        }
+        }
+    &__banner{
+        margin-top: 25rem;
+        .quests__content{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2rem;
+            img{
+                width: 300px;
+                margin: 0 auto;
+            }
+            .quests__text{
+            
+                h1{
+                  color: $clr-light;
+                  text-align: center;
+                  margin: 0 auto;
+                  width: 45rem;
+                  font-weight: 900;
+                  line-height: 5rem;
+                  font-size: 60px;
+                }
+                p{
+                  margin: 1.38rem;
+                  padding-top: 2rem;
+                  color: $clr-light;
+                  font-size: 16px;
+                  text-align: center;
+                  font-weight: 600;
+                    padding-bottom: 2rem;
+                }
+           
+             
+              }
+              .quests__btn{       
+                padding-bottom: 2.5rem;     
+                text-align: center;
+                a{
+                    font-weight: 700;
+                    
+                }
+              }
+           
+        
+        }
+       
+    }
+    @include mediaQuery($break-md) {
+
+        &__link{
+            padding-top: 0;
+        }
+        &__wrapper{
+            margin-bottom: -38rem;
+        }
+
+        .quests__bg-img{
+            padding-top: 5rem;
+            img{
+              display: block;
+              width: 97rem;
+              margin: 0 auto;
+              opacity: 40%;
+              border: transparent;
+              border-radius: 10rem;
+            }
+            }
+            &__banner{
+                margin-top: 0;
+                .quests__content{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10rem;
+                    position: relative;
+                    top: -55rem;
+                    img{
+                        width: 40rem;
+                    }
+                    .quests__text{
+                        padding-top: 3rem;
+                        h1{
+                           font-family: $ff-secondary;
+                           
+                            text-align: start;
+                            width: unset;
+                            line-height: 7.5rem;
+                            font-size: 9rem;
+                  
+                        }
+                        p{
+                            text-align: start;
+                            font-weight: 600;
+                            font-size: 2rem;
+                        }
+                        .quests__btn{ 
+                            text-align: start;
+                        }
+                        }
+                }
+              
+        
+            }
+
+    }
+
+}
+
+.work{
+    background-color: #2a0340;
+    &__wrapper{
+        padding-bottom: 8rem;
+    }
+    &__title{
+        color: $clr-light;
+        text-align: center;
+        h2{
+            font-size: 1.6rem;
+            padding-left: 12rem;
+            font-weight: 900;
+        }
+        h1{
+     
+          font-size: 4rem; 
+          width: 30rem;
+            line-height: 4.5rem;
+        margin: 0 auto;
+        font-weight: 900;
+        padding-bottom: 8rem;
+        span{
+            color: $clr-green;
+        }
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        text-align: center; 
+        gap: 5rem;  
+        color: $clr-light;  
+     
+        
+    }
+    &__item{
+        h5{
+            background-color: #6004a7;
+            width: 2.5rem;
+            border-radius: 100%;
+            margin: 0 auto;
+        }
+        h3{
+            padding-top: 2rem;
+            font-size: 2.5rem;
+
+            margin: 0 auto;
+            font-weight: 900;
+            line-height: 2.5rem;
+            padding-bottom: 2.5rem;
+            span{
+                color: $clr-green;
+            }
+        }
+        .work__img{
+            img{
+                width: 30rem;
+                border-radius: 3.5rem;
+            }
+        }
+      }
+      @include mediaQuery($break-md){
+        &__title{
+            h2{
+                padding: 0;
+              
+            }
+            h1{
+                width: unset;
+                font-size: 4.5rem;
+            }
+        }
+        &__card{
+            display: unset;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: center;
+
+        }
+        &__item{
+            h5{
+               font-size: 2rem;
+               width: 3.5rem;
+            }
+            h3{
+                width: unset;
+              font-size: 3.8rem;
+              line-height: 3.7rem;
+            }
+            .work__img{
+                img{
+                    width: unset;
+                    width: 40rem;
+                    border-radius: 14rem;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+
+
+      }
+
+}
+
+.gamer{
+    background-color: #2a0340;
+    &__wrapper{
+        h6{
+            font-size: 5rem;
+            text-align: center;
+            color: $clr-green;
+            font-weight: 900;
+        }
+    }
+    &__cards{
+        color: $clr-light;
+        .gamer__bg{
+            img{
+                position: absolute;
+                width: 50rem;
+            }
+         }
+    }
+ 
+ 
+}

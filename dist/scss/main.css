@@ -113,11 +113,253 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 1px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
+.btn.brightGreen {
+  cursor: pointer;
+  transition: 0.1s ease;
+  background-color: #15f5ba;
+  color: #23272a;
+  padding: 1.6rem 3rem;
+  position: relative;
+  box-shadow: rgba(13, 215, 195, 0.796) 0px 0px 70px 15px;
+  bottom: 0;
+}
+.btn.brightGreen:hover {
+  background-color: #15dda8;
+}
 
 .landing {
   background-image: url("/dist/img/landing/bg-art.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.quests {
+  background: linear-gradient(#6004a7 14%, #2a0340 90%);
+}
+.quests__wrapper {
+  padding-bottom: 5rem;
+}
+.quests__link {
+  padding-top: 10rem;
+}
+.quests__link ul {
+  position: fixed;
+  left: 25%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quests__link ul li {
+  padding: 20px 20px;
+}
+.quests__link ul li a {
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.1254901961);
+  width: 100%;
+  color: #15f5ba;
+  border-radius: 1rem;
+  font-weight: 900;
+}
+.quests__link ul li i {
+  padding-left: 3rem;
+  color: #ffffff;
+}
+.quests .quests__bg-img img {
+  display: none;
+}
+.quests__banner {
+  margin-top: 25rem;
+}
+.quests__banner .quests__content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+.quests__banner .quests__content img {
+  width: 300px;
+  margin: 0 auto;
+}
+.quests__banner .quests__content .quests__text h1 {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  width: 45rem;
+  font-weight: 900;
+  line-height: 5rem;
+  font-size: 60px;
+}
+.quests__banner .quests__content .quests__text p {
+  margin: 1.38rem;
+  padding-top: 2rem;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.quests__banner .quests__content .quests__btn {
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+.quests__banner .quests__content .quests__btn a {
+  font-weight: 700;
+}
+@media screen and (min-width: 760px) {
+  .quests__link {
+    padding-top: 0;
+  }
+  .quests__wrapper {
+    margin-bottom: -38rem;
+  }
+  .quests .quests__bg-img {
+    padding-top: 5rem;
+  }
+  .quests .quests__bg-img img {
+    display: block;
+    width: 97rem;
+    margin: 0 auto;
+    opacity: 40%;
+    border: transparent;
+    border-radius: 10rem;
+  }
+  .quests__banner {
+    margin-top: 0;
+  }
+  .quests__banner .quests__content {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    position: relative;
+    top: -55rem;
+  }
+  .quests__banner .quests__content img {
+    width: 40rem;
+  }
+  .quests__banner .quests__content .quests__text {
+    padding-top: 3rem;
+  }
+  .quests__banner .quests__content .quests__text h1 {
+    font-family: Montserrat, "Montserrat", sans-serif;
+    text-align: start;
+    width: unset;
+    line-height: 7.5rem;
+    font-size: 9rem;
+  }
+  .quests__banner .quests__content .quests__text p {
+    text-align: start;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .quests__banner .quests__content .quests__text .quests__btn {
+    text-align: start;
+  }
+}
+
+.work {
+  background-color: #2a0340;
+}
+.work__wrapper {
+  padding-bottom: 8rem;
+}
+.work__title {
+  color: #ffffff;
+  text-align: center;
+}
+.work__title h2 {
+  font-size: 1.6rem;
+  padding-left: 12rem;
+  font-weight: 900;
+}
+.work__title h1 {
+  font-size: 4rem;
+  width: 30rem;
+  line-height: 4.5rem;
+  margin: 0 auto;
+  font-weight: 900;
+  padding-bottom: 8rem;
+}
+.work__title h1 span {
+  color: #15f5ba;
+}
+.work__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+  color: #ffffff;
+}
+.work__item h5 {
+  background-color: #6004a7;
+  width: 2.5rem;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.work__item h3 {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  font-weight: 900;
+  line-height: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.work__item h3 span {
+  color: #15f5ba;
+}
+.work__item .work__img img {
+  width: 30rem;
+  border-radius: 3.5rem;
+}
+@media screen and (min-width: 760px) {
+  .work__title h2 {
+    padding: 0;
+  }
+  .work__title h1 {
+    width: unset;
+    font-size: 4.5rem;
+  }
+  .work__card {
+    display: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  .work__item h5 {
+    font-size: 2rem;
+    width: 3.5rem;
+  }
+  .work__item h3 {
+    width: unset;
+    font-size: 3.8rem;
+    line-height: 3.7rem;
+  }
+  .work__item .work__img img {
+    width: unset;
+    width: 40rem;
+    border-radius: 14rem;
+    margin: 0 auto;
+  }
+}
+
+.gamer {
+  background-color: #2a0340;
+}
+.gamer__wrapper h6 {
+  font-size: 5rem;
+  text-align: center;
+  color: #15f5ba;
+  font-weight: 900;
+}
+.gamer__cards {
+  color: #ffffff;
+}
+.gamer__cards .gamer__bg img {
+  position: absolute;
+  width: 50rem;
 }
 
 .unscroll {

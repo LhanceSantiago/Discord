@@ -67,4 +67,18 @@
             box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
         }
     }
+    &.brightGreen{
+            cursor: pointer;
+            transition: 0.1s ease;
+            background-color: $clr-green;
+            color: $clr-dark;
+            padding: 1.6rem 3rem;
+            position: relative;
+            box-shadow: rgba(13, 215, 195, 0.796) 0px 0px 70px 15px;
+            bottom: 0;
+            &:hover {
+                background-color: #15dda8;
+            }
+        
+    }
 } 
