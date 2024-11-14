@@ -95,7 +95,7 @@
         display: none;
     }
     @include mediaQuery($break-md) {
-        position: unset;
+         
         &__wrapper {
             .toggle__menu {
                 display: none;
