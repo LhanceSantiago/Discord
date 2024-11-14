@@ -537,11 +537,10 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 .logo .item {
-  width: 190px;
+  width: 180px;
   background: transparent;
   height: 120px;
   background-color: transparent;
-  border-radius: 5px;
   position: absolute;
   left: 1500px;
   animation-name: scrollLeft;
@@ -550,8 +549,8 @@ h1, h2, h3, h4, h5, h6 {
   animation-iteration-count: infinite;
 }
 .logo .item img {
-  width: 190px;
-  height: 70px;
+  width: 180px;
+  height: 60px;
 }
 @keyframes scrollLeft {
   to {
