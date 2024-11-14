@@ -694,6 +694,401 @@ h1, h2, h3, h4, h5, h6 {
   width: 2rem;
 }
 
+.banner {
+  background: linear-gradient(135deg, #5865f2, #ed61c1);
+}
+.banner video {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  display: none;
+}
+.banner .container {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 50rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.banner .container .banner__wrapper {
+  margin-top: -30rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.banner .container .banner__wrapper img {
+  width: 80%;
+}
+.banner .container .banner__wrapper .banner__video--txt {
+  max-width: 600px;
+  text-align: center;
+  margin-top: -10rem;
+}
+.banner .container .banner__wrapper .banner__video--txt .banner__title {
+  font: Montserrat, "Montserrat", sans-serif;
+  font-weight: 1000;
+  line-height: 0.9;
+  color: #ffffff;
+}
+.banner .container .banner__wrapper .banner__video--txt h1 {
+  font-size: 4rem;
+}
+.banner .container .banner__wrapper .banner__video--txt p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 980px) {
+  .banner {
+    display: unset;
+  }
+  .banner video {
+    overflow: hidden;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    display: unset;
+  }
+  .banner .container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: none;
+    margin-right: -50rem;
+  }
+  .banner .container .banner__wrapper .banner__img {
+    display: none;
+  }
+  .banner .container .banner__wrapper .banner__video--txt {
+    text-align: left;
+    display: unset;
+    margin-top: -2rem;
+    margin-left: -8rem;
+  }
+  .banner .container .banner__wrapper .banner__video--txt .banner__title {
+    font-size: 6rem;
+    max-width: 40rem;
+    margin-bottom: 3rem;
+  }
+  .banner .container .banner__wrapper .banner__video--txt p {
+    font-weight: 400;
+    font-size: 2rem;
+    max-width: 40rem;
+  }
+}
+.cta .cta__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -40rem auto 90px;
+}
+.cta .cta__wrapper .cta__card--title {
+  font-size: 4rem;
+}
+.cta .cta__card--parent {
+  margin-top: -1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.cta .cta__card--parent #card2 {
+  background: linear-gradient(#5865f2, #ed61c1);
+}
+.cta .cta__card {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  border-radius: 3rem;
+  padding: 6rem 5.3rem;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.cta .cta__card .cta__card--title h1 {
+  font-size: 3rem;
+  font-weight: 1000;
+  margin-top: -2rem;
+  margin-left: -4rem;
+  margin-bottom: 3rem;
+  font: Montserrat, "Montserrat", sans-serif;
+}
+.cta .cta__card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  margin-bottom: 5rem;
+  margin-left: -4rem;
+}
+.cta .cta__card ul li {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  display: flex;
+}
+.cta .cta__card ul li i {
+  margin-right: 1rem;
+  color: #ffffff;
+}
+.cta .cta__card a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 1rem 15rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #23272a;
+  background: #ffffff;
+  border-radius: 2rem;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.cta .cta__card a:hover {
+  background: #ffffff;
+}
+
+@media screen and (min-width: 980px) {
+  .cta .cta__wrapper .cta__card--parent {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+  }
+}
+.perks {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.perks__title h1 {
+  color: #23272a;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+.perks__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.perks__wrapper .perks__card {
+  background-color: #F6F6F6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.perks__wrapper .perks__card h4 {
+  color: #23272a;
+  font-size: 1.9rem;
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+}
+.perks__wrapper .perks__card img {
+  width: 80%;
+  border-radius: 12px;
+}
+.perks a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1.5rem 2rem;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  max-width: 20rem;
+  margin-left: -1rem;
+}
+.perks a:hover {
+  background-color: #0c0d0e;
+}
+
+@media (min-width: 760px) {
+  .perks .perks__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .perks .perks__wrapper .perks__card h4 {
+    font-size: 2.1rem;
+  }
+  .perks .perks__wrapper .perks__card img {
+    width: 70%;
+  }
+}
+.cta2 {
+  background: linear-gradient(150deg, #cf008e, #5865f2);
+  padding: 10rem 0;
+  text-align: center;
+}
+.cta2__wrapper img {
+  display: none;
+}
+.cta2__wrapper .cta2__text h4 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+.cta2__wrapper .cta2__text a {
+  background-color: #ffffff;
+  color: #23272a;
+  border: #23272a;
+  border-radius: 25px;
+  padding: 1.5rem 5rem;
+}
+.cta2__wrapper .cta2__text a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: #161cbb;
+  transition: 0.4s ease-in;
+}
+
+@media screen and (min-width: 980px) {
+  .cta2__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+.faq {
+  padding: 20rem 0;
+  text-align: center;
+  padding-top: 5rem;
+  overflow: hidden;
+}
+.faq__title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+.faq_content--body {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 45rem;
+}
+@media screen and (min-width: 760px) {
+  .faq_content--body {
+    width: 40vw;
+    margin-left: 20rem;
+  }
+}
+.faq_content--body h3 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  transform: scaleY("-1");
+  transition-duration: 0.5s;
+}
+.faq_content--body h3 i {
+  display: inline-block;
+  justify-content: space-between;
+  right: 0;
+  transition: 0.5s ease;
+  transform: matrix(0deg);
+}
+.faq_content--body h3 i.open {
+  transform: rotate(130deg);
+}
+.faq_content--body.active {
+  display: block;
+}
+.faq_content--text {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  background-color: #F6F6F6;
+  padding: 2.5rem;
+  border-radius: 15px;
+  max-width: 90rem;
+}
+.faq_content--text p {
+  color: #23272a;
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  transform: scaleY("1");
+  transition-duration: 0.5s;
+  text-align: left;
+}
+.faq_content--text p a {
+  text-decoration: underline;
+}
+.faq_content--text p.open {
+  max-height: 45rem;
+  padding: 2rem;
+}
+.faq_content--text h3 {
+  font-size: 1.6rem;
+  text-align: left;
+}
+@media screen and (min-width: 760px) {
+  .faq_tabs {
+    display: flex;
+    justify-content: center;
+    color: #23272a;
+  }
+}
+.faq_tabs ul {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+  width: 100%;
+}
+@media screen and (min-width: 760px) {
+  .faq_tabs ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 8rem;
+  }
+}
+.faq_tabs ul .faq_tab {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.faq_tabs ul .faq_tab.active {
+  color: #161cbb;
+  border-bottom: solid 3px #161cbb;
+}
+.faq_cards {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+@media screen and (min-width: 760px) {
+  .faq_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+.faq_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 760px) {
+  .faq_item {
+    display: block;
+    align-items: center;
+  }
+}
+
 .unscroll {
   overflow: hidden;
 }
@@ -796,9 +1191,6 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 @media screen and (min-width: 760px) {
-  .header {
-    position: unset;
-  }
   .header__wrapper .toggle__menu {
     display: none;
   }
