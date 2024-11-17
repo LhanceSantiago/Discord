@@ -103,6 +103,7 @@ background:   linear-gradient(#2a0340 14%,#6004a7 80%);
               border: transparent;
               border-radius: 10rem;
             }
+   
             }
             &__banner{
                 margin-top: 0;
@@ -300,7 +301,7 @@ background:   linear-gradient(#2a0340 14%,#6004a7 80%);
         h1{
             padding-top: 2rem;
             font-weight: 900;
-            padding-bottom: 1.5rem;
+            padding-bottom: 1rem;
             font-size: 2.8rem;
             line-height: 2.4rem;
         }
@@ -489,7 +490,7 @@ background:   linear-gradient(#2a0340 14%,#6004a7 80%);
             color: $clr-green;
             margin: 0 auto;
             text-align: center; 
-            width: 20rem;
+            width: 30rem;
             font-weight: 900;
             line-height: 5rem;
             font-size: 6rem;
@@ -520,9 +521,9 @@ background:   linear-gradient(#2a0340 14%,#6004a7 80%);
     &__content-item{
      
         color: $clr-light;
-        width: 45rem;
-        height: 16.2rem;
-      
+        width: 43rem;
+        height: 17.2rem;
+        margin: 0 auto;
         padding: 2.5rem;
         border-radius: 5rem;
          background:   linear-gradient(#360c4f 14%,#784de5 80%);
@@ -698,7 +699,8 @@ background:   linear-gradient(#2a0340 14%,#6004a7 80%);
             img{
                 position: relative;
                 width: 170px;
-                bottom: 12rem;
+                bottom: 11rem;
+                z-index: 2;
             
               
             }
@@ -709,6 +711,8 @@ background:   linear-gradient(#2a0340 14%,#6004a7 80%);
 .rocket{
     color: $clr-light;
     text-align: center;
+    position: relative;
+    z-index: 3;
     background:   linear-gradient(#2a0340 14%,#6004a7 80%);
     margin-bottom: -2rem;
     .bgStar{
@@ -718,11 +722,16 @@ background:   linear-gradient(#2a0340 14%,#6004a7 80%);
             position: relative;
             bottom: 25rem;
         }
+        #star1{
+            display: none;
+        }
     }  
     .launch{
         padding-top: 4rem;
         img{
-            width: 250px;
+            width: 270px;
+            position: relative;
+            top: 1.9rem;
         }
     }
     &__wrapper{
@@ -738,10 +747,30 @@ background:   linear-gradient(#2a0340 14%,#6004a7 80%);
         }
     }
     @include mediaQuery($break-md){
+        .bgStar{
+            position: unset;
+            display: flex;
 
+            img{
+                margin-bottom: -47rem;
+                height: 60rem;
+                bottom: 1rem;
+            }
+            #star1{
+                display: block;
+                left: -20rem;
+                width: 90rem;
+                transform: scaleX(1.1);
+            }
+            #pix{
+                left: 2rem;
+                transform: scaleX(2);
+                position: relative;
+            }
+        }
         &__wrapper{
             padding-top: 25rem;
-            margin-bottom: -30rem;        
+            margin-bottom: -48rem;        
             h1{
                 font-size: 5.4rem;
                 font-weight: 900;
@@ -753,7 +782,8 @@ background:   linear-gradient(#2a0340 14%,#6004a7 80%);
             img{
                 position: relative;
                 left: 50rem;
-                width: 380px;
+                width: 30rem;
+                bottom: -1.8rem;
            
          
             }

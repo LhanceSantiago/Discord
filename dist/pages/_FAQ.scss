@@ -1,0 +1,163 @@
+.link{
+  padding-top: 20rem;
+  &__wrapper{
+    text-align: center;
+  }
+}
+
+
+.guide{
+  background-image: linear-gradient(#4b0f78 14%, #37095b 70%);
+
+  color: $clr-light;
+  text-align: center;
+&__wrapper{
+  padding-top: 18rem;
+  padding-bottom: 7rem;
+  h1{
+    font-size: 5rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+    line-height: 4rem;
+  }
+  p{
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}
+@include mediaQuery($break-md){
+  &__wrapper{
+    padding-bottom: 0;
+    padding-bottom: 13rem;
+    h1{
+      font-size: 9rem;
+      padding-bottom: 5rem;
+    }
+    p{
+      font-size: 2.1rem;
+      font-weight: 500;
+    }
+  }
+}
+}
+
+
+.faq{
+  background:   linear-gradient(#2a0340 14%,#4b0481 80%);
+  h2{
+    color: $clr-light;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+
+  }
+  &__wrapper{
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+    img{
+      display: none;
+    }
+  }
+
+  
+  .faq-item {
+    margin-bottom: 10px;
+  }
+
+  .faq-question {
+ background:   linear-gradient(#571388ea 1%,#784de5 70%);
+    color: white;
+    padding: 42px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    align-items: center;
+  
+    h1{
+      font-size: 1.7rem;
+      font-weight: 600;
+      position: relative;
+      z-index: 4;
+
+    }
+
+  }
+
+  .faq-answer {
+    display: none;
+    position: relative;
+    background:   linear-gradient(#784de5 14%,#784de5 70%);
+    padding: 35px;
+    z-index: 2;
+    width: fit-content;
+    color: $clr-light;
+    height: fit-content;
+    bottom: 35px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    p{
+      font-size: 1.48rem;
+      span{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .faq-answer.open {
+    display: block;
+  }
+  .plus-icon{
+    transition:  .5s ease;
+    font-weight: 700;
+    font-size: 28px;
+
+
+  }
+  
+  .plus-icon.rotate{
+    transform: rotate(90deg);
+  }
+
+  
+  @include mediaQuery($break-md){
+    .faq-answer{
+        width: unset;
+    }
+
+    .faq-question{
+      h1{
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+    }
+    &__wrapper{
+
+      h2{
+        font-size: 6rem;
+        padding-top: 3rem;
+        padding-bottom: 0;
+      }
+      .faq-img{
+        img{
+          display: block;
+          position: absolute;
+        }
+        #clyde{
+          top: 43rem;
+          width: 215px;
+        }
+        #wumpus{
+          bottom: 28.9rem;
+          left: 85rem;
+          width: 27rem;
+          position: relative;
+          margin-bottom: -35rem;
+        }
+
+      }
+    }
+  }
+}
