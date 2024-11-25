@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 2rem;
 }
 .landingBanner__float {
+  left: -2rem;
   position: absolute;
 }
 .landingBanner__float .potion {
@@ -167,6 +168,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
 }
 .landingBanner__main {
   display: flex;
@@ -187,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 1000;
 }
 .landingBanner__main p {
-  width: 40rem;
+  width: 30rem;
 }
 .landingBanner__main--buttons {
   display: flex;
@@ -416,19 +418,22 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   width: 100%;
   display: flex;
+  padding-left: 10rem;
 }
 .content__box--image-1 img {
   display: block;
 }
 .content__box--image-1 .wumpus {
-  width: 10rem;
+  margin-left: 5rem;
+  width: 8rem;
 }
 .content__box--image-2 {
   width: 100%;
   display: flex;
   height: 6rem;
   overflow: hidden;
-  justify-content: end;
+  justify-content: center;
+  margin-left: 10rem;
 }
 .content__box--image-2 .woman {
   width: 9rem;
@@ -436,7 +441,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .content__box--image-2 .friend {
   width: 11rem;
-  height: 12rem;
+  height: 15rem;
 }
 .content__float {
   position: absolute;
@@ -472,14 +477,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .content #content__float-6 .coin {
-  width: 13rem;
+  width: 15rem;
   top: -26rem;
-  left: -17rem;
+  left: -12rem;
 }
 .content #content__float-6 .pan {
-  width: 11rem;
+  width: 13rem;
   left: 6rem;
-  top: -10rem;
+  top: -15rem;
 }
 .content #content__float-6--bottom img {
   position: relative;
@@ -498,19 +503,22 @@ h1, h2, h3, h4, h5, h6 {
   border: 3px solid #b5b2b2;
 }
 .content__text {
-  width: 35rem;
+  width: 30rem;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 .content__text h3 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 1000;
+}
+.content__text p {
+  width: 25rem;
 }
 .content video {
   pointer-events: none;
-  width: 40rem;
+  width: 30rem;
   border-radius: 3rem;
 }
 .content marquee {
@@ -676,22 +684,52 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 .landing-cta__img {
+  padding-top: 5rem;
   position: relative;
+}
+.landing-cta__img img {
+  display: block;
 }
 .landing-cta__img .main {
   width: 100%;
 }
 .landing-cta__img .wumpus {
-  top: 6.2rem;
-  left: 20rem;
+  top: 10.5rem;
+  left: 18rem;
   position: absolute;
-  width: 4.8rem;
+  width: 4rem;
 }
 .landing-cta__img .acc {
-  top: 4rem;
-  left: 21.5rem;
+  top: 9rem;
+  left: 19rem;
   position: absolute;
   width: 2rem;
+}
+.landing-cta__img .clyde {
+  top: 7rem;
+  left: 32rem;
+  position: absolute;
+  width: 3rem;
+}
+@media screen and (min-width: 760px) {
+  .landing-cta .wumpus {
+    top: 18rem;
+    left: 60rem;
+    position: absolute;
+    width: 19.4rem;
+  }
+  .landing-cta .acc {
+    top: 11rem;
+    left: 65rem;
+    position: absolute;
+    width: 10rem;
+  }
+  .landing-cta .clyde {
+    top: 11rem;
+    left: 115rem;
+    position: absolute;
+    width: 10rem;
+  }
 }
 
 .unscroll {
