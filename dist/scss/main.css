@@ -663,7 +663,7 @@ h1, h2, h3, h4, h5, h6 {
 .landing-cta {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
 }
 .landing-cta__text {
   text-align: center;
@@ -684,7 +684,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 .landing-cta__img {
-  padding-top: 5rem;
   position: relative;
 }
 .landing-cta__img img {
@@ -694,38 +693,57 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .landing-cta__img .wumpus {
-  top: 10.5rem;
+  top: 5.5rem;
   left: 18rem;
   position: absolute;
   width: 4rem;
 }
 .landing-cta__img .acc {
-  top: 9rem;
+  top: 4rem;
   left: 19rem;
   position: absolute;
   width: 2rem;
 }
 .landing-cta__img .clyde {
-  top: 7rem;
+  top: 2.5rem;
   left: 32rem;
   position: absolute;
   width: 3rem;
 }
 @media screen and (min-width: 760px) {
+  .landing-cta {
+    justify-content: center;
+    align-items: center;
+  }
+  @keyframes acc {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .landing-cta .main {
+    width: 151.9rem;
+  }
   .landing-cta .wumpus {
-    top: 18rem;
+    top: 13rem;
     left: 60rem;
     position: absolute;
     width: 19.4rem;
   }
   .landing-cta .acc {
-    top: 11rem;
+    top: 6.5rem;
     left: 65rem;
     position: absolute;
     width: 10rem;
+    animation: acc 8s ease-in-out infinite;
   }
   .landing-cta .clyde {
-    top: 11rem;
+    top: 7rem;
     left: 115rem;
     position: absolute;
     width: 10rem;

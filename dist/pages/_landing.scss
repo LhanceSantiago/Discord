@@ -570,7 +570,7 @@
 .landing-cta {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
     &__text {
         text-align: center;
         display: flex;
@@ -589,7 +589,6 @@
         }
     }
     &__img {
-        padding-top: 5rem;
         position: relative;
         img {
             display: block;
@@ -598,39 +597,57 @@
             width: 100%;
         }
         .wumpus {
-            top: 10.5rem;
+            top: 5.5rem;
             left: 18rem;
             position: absolute;
             width: 4rem;
         }
         .acc {
-            top: 9rem;
+            top: 4rem;
             left: 19rem;
             position: absolute;
             width: 2rem;
         }
         .clyde {
-            top: 7rem;
+            top: 2.5rem;
             left: 32rem;
             position: absolute;
             width: 3rem;
         }
     }
     @include mediaQuery($break-md) {
+        @keyframes acc {
+            0% {
+                transform: rotate(0deg);
+              }
+              50% {
+                transform: rotate(-20deg);
+              }
+              100% {
+                transform: rotate(0deg);
+              }
+            
+            }
+            justify-content: center;
+            align-items: center;
+        .main {
+            width: 151.9rem;
+        }
         .wumpus {
-            top: 18rem;
+            top: 13rem;
             left: 60rem;
             position: absolute;
             width: 19.4rem;
         }
         .acc {
-            top: 11rem;
+            top: 6.5rem;
             left: 65rem;
             position: absolute;
             width: 10rem;
+            animation: acc 8s ease-in-out infinite;
         }
         .clyde {
-            top: 11rem;
+            top: 7rem;
             left: 115rem;
             position: absolute;
             width: 10rem;
