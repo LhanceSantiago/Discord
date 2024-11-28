@@ -2038,6 +2038,10 @@ h1, h2, h3, h4, h5, h6 {
 .header.purple {
   background: linear-gradient(#2a0340 14%, #6004a7 80%);
 }
+.header.white {
+  background: transparent;
+  color: #ffffff;
+}
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -2126,6 +2130,13 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 @media screen and (min-width: 760px) {
+  .header {
+    position: unset;
+  }
+  .header.white {
+    height: 0;
+    padding: 0;
+  }
   .header__wrapper .toggle__menu {
     display: none;
   }
@@ -2147,7 +2158,7 @@ h1, h2, h3, h4, h5, h6 {
   .header .header__nav {
     padding: 0;
     flex-direction: row;
-    gap: 2rem;
+    gap: 5rem;
   }
   .header .header__nav li a {
     color: #ffffff;
