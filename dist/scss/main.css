@@ -1443,7 +1443,7 @@ h1, h2, h3, h4, h5, h6 {
 .gamer__text h1 {
   padding-top: 2rem;
   font-weight: 900;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   font-size: 2.8rem;
   line-height: 2.4rem;
 }
@@ -1612,7 +1612,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #15f5ba;
   margin: 0 auto;
   text-align: center;
-  width: 20rem;
+  width: 30rem;
   font-weight: 900;
   line-height: 5rem;
   font-size: 6rem;
@@ -1640,8 +1640,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .effect__content-item {
   color: #ffffff;
-  width: 45rem;
-  height: 16.2rem;
+  width: 43rem;
+  height: 17.2rem;
+  margin: 0 auto;
   padding: 2.5rem;
   border-radius: 5rem;
   background: linear-gradient(#360c4f 14%, #784de5 80%);
@@ -1801,13 +1802,16 @@ h1, h2, h3, h4, h5, h6 {
   .promoted .trophy img {
     position: relative;
     width: 170px;
-    bottom: 12rem;
+    bottom: 11rem;
+    z-index: 2;
   }
 }
 
 .rocket {
   color: #ffffff;
   text-align: center;
+  position: relative;
+  z-index: 3;
   background: linear-gradient(#2a0340 14%, #6004a7 80%);
   margin-bottom: -2rem;
 }
@@ -1819,11 +1823,16 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   bottom: 25rem;
 }
+.rocket .bgStar #star1 {
+  display: none;
+}
 .rocket .launch {
   padding-top: 4rem;
 }
 .rocket .launch img {
-  width: 250px;
+  width: 270px;
+  position: relative;
+  top: 1.9rem;
 }
 .rocket__wrapper {
   padding-top: 8rem;
@@ -1837,9 +1846,29 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 7rem;
 }
 @media screen and (min-width: 760px) {
+  .rocket .bgStar {
+    position: unset;
+    display: flex;
+  }
+  .rocket .bgStar img {
+    margin-bottom: -47rem;
+    height: 60rem;
+    bottom: 1rem;
+  }
+  .rocket .bgStar #star1 {
+    display: block;
+    left: -20rem;
+    width: 90rem;
+    transform: scaleX(1.1);
+  }
+  .rocket .bgStar #pix {
+    left: 2rem;
+    transform: scaleX(2);
+    position: relative;
+  }
   .rocket__wrapper {
     padding-top: 25rem;
-    margin-bottom: -30rem;
+    margin-bottom: -48rem;
   }
   .rocket__wrapper h1 {
     font-size: 5.4rem;
@@ -1850,7 +1879,148 @@ h1, h2, h3, h4, h5, h6 {
   .rocket .launch img {
     position: relative;
     left: 50rem;
-    width: 380px;
+    width: 30rem;
+    bottom: -1.8rem;
+  }
+}
+
+.link {
+  padding-top: 20rem;
+}
+.link__wrapper {
+  text-align: center;
+}
+
+.guide {
+  background-image: linear-gradient(#4b0f78 14%, #37095b 70%);
+  color: #ffffff;
+  text-align: center;
+}
+.guide__wrapper {
+  padding-top: 18rem;
+  padding-bottom: 7rem;
+}
+.guide__wrapper h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  padding-bottom: 2rem;
+  line-height: 4rem;
+}
+.guide__wrapper p {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 760px) {
+  .guide__wrapper {
+    padding-bottom: 0;
+    padding-bottom: 13rem;
+  }
+  .guide__wrapper h1 {
+    font-size: 9rem;
+    padding-bottom: 5rem;
+  }
+  .guide__wrapper p {
+    font-size: 2.1rem;
+    font-weight: 500;
+  }
+}
+
+.faq {
+  background: linear-gradient(#2a0340 14%, #4b0481 80%);
+}
+.faq h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  padding-bottom: 2rem;
+}
+.faq__wrapper {
+  padding-top: 7rem;
+  padding-bottom: 8rem;
+}
+.faq__wrapper img {
+  display: none;
+}
+.faq .faq-item {
+  margin-bottom: 10px;
+}
+.faq .faq-question {
+  background: linear-gradient(rgba(87, 19, 136, 0.9176470588) 1%, #784de5 70%);
+  color: white;
+  padding: 42px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  align-items: center;
+}
+.faq .faq-question h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 4;
+}
+.faq .faq-answer {
+  display: none;
+  position: relative;
+  background: linear-gradient(#784de5 14%, #784de5 70%);
+  padding: 35px;
+  z-index: 2;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #ffffff;
+  height: -moz-fit-content;
+  height: fit-content;
+  bottom: 35px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.faq .faq-answer p {
+  font-size: 1.48rem;
+}
+.faq .faq-answer p span {
+  text-decoration: underline;
+}
+.faq .faq-answer.open {
+  display: block;
+}
+.faq .plus-icon {
+  transition: 0.5s ease;
+  font-weight: 700;
+  font-size: 28px;
+}
+.faq .plus-icon.rotate {
+  transform: rotate(90deg);
+}
+@media screen and (min-width: 760px) {
+  .faq .faq-answer {
+    width: unset;
+  }
+  .faq .faq-question h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .faq__wrapper h2 {
+    font-size: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+  .faq__wrapper .faq-img img {
+    display: block;
+    position: absolute;
+  }
+  .faq__wrapper .faq-img #clyde {
+    top: 43rem;
+    width: 215px;
+  }
+  .faq__wrapper .faq-img #wumpus {
+    bottom: 28.9rem;
+    left: 85rem;
+    width: 27rem;
+    position: relative;
+    margin-bottom: -35rem;
   }
 }
 
