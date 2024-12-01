@@ -117,6 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("/dist/img/landing/bg-art.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .landingBanner {
@@ -130,8 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .landingBanner__float {
-  margin-right: 5rem;
-  width: 100%;
+  position: absolute;
 }
 .landingBanner__float .potion {
   width: 4rem;
@@ -206,9 +206,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 3.5rem;
 }
 @media screen and (min-width: 760px) {
-  .landingBanner {
-    margin-right: 0;
-  }
   @keyframes potion {
     0% {
       transform: translateX(0);

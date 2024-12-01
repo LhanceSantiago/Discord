@@ -2,10 +2,11 @@
     background-image: url('/dist/img/landing/bg-art.png');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 .landingBanner {
     padding: 8rem 0;
-    position: relative;
+    position: relative; 
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -13,8 +14,7 @@
         align-items: center;
     }
     &__float {
-        margin-right: 5rem;
-        width: 100%;
+        position: absolute;
         .potion {
             width: 4rem;
             height: 4.8rem;
@@ -87,8 +87,7 @@
             }
         }
     }
-    @include mediaQuery($break-md) {
-        margin-right: 0;
+    @include mediaQuery($break-md) {    
         @keyframes potion {
             0% {
               transform: translateX(0);
