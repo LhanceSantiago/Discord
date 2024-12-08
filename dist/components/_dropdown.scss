@@ -1,0 +1,72 @@
+.subnav {
+    height: 0;
+    z-index: 998;
+    position: relative;
+    top: 10rem;
+    transition: 0.5s ease;
+    #activeDropdown {
+        color: $clr-green;
+     }
+    &.fixed {
+        position: sticky;
+        width: 100%;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .quests__dropdown{
+        padding-top: 2rem;
+        overflow: hidden;
+        max-height: 9rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: fit-content;
+        &.open {
+            max-height: 30rem;
+        }
+        a {
+            color: $clr-light;
+            font-size: 1.6rem;
+            font-weight: 900;
+            transition: 0.2s ease;
+        }
+        i {
+            color: $clr-light;
+            cursor: pointer;
+        }
+        li {
+            width: 100%;
+            padding: 2rem 3rem;
+            border-radius: 1rem;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            background-color: #2522225f;
+            &:hover {
+                a {
+                    color: $clr-green;
+                }
+            }
+        }
+     }
+     @include mediaQuery($break-md) {
+        top: 0;
+        .quests__dropdown {
+            max-height: 100%;
+            flex-direction: row;
+            justify-content: center;
+            li {
+               width: fit-content;
+               padding: 1.5rem 3rem;
+            }
+            i {
+               display: none;
+            }
+        }
+       }
+ }

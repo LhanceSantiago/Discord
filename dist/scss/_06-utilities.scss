@@ -22,7 +22,6 @@
     &.white {
         background-color: $clr-light;
         color: $clr-dark;
-        padding: 1rem 1.5rem;
         &:hover {
             color: $clr-secondary;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -36,7 +35,7 @@
         }
     }
     &.blueBright {
-        transition: 0.1s ease;
+        transition: 0.3s ease;
         background-color: $clr-secondary;
         color: $clr-light;
         position: relative;
