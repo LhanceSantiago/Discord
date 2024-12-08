@@ -515,6 +515,176 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.why {
+  padding: 10rem 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #560494, #510388);
+  color: #ffffff;
+  font-family: Inter, "Inter", sans-serif;
+}
+.why .container .why__banner .banner__img--1 img {
+  height: 20%;
+  width: 20%;
+  margin-right: 40rem;
+}
+.why .container .why__banner .banner__img--2 img {
+  height: 20%;
+  width: 20%;
+  margin-left: 35rem;
+  margin-top: -10rem;
+}
+.why .container .why__banner .why__title img {
+  display: none;
+}
+.why .container .why__banner .why__title h1 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 auto;
+  width: 45rem;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+  line-height: 6rem;
+}
+.why .container .why__banner .why__title p {
+  font-size: 1.8rem;
+  font: Inter, "Inter", sans-serif;
+  margin-bottom: 8rem;
+}
+.why .container .why__card--parent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.why .container .why__card--parent .why__card {
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+.why .container .why__card--parent .why__card h2 {
+  font-size: 8rem;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 1000;
+  background: linear-gradient(to right, #ffffff, #9b9090);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.why .container .why__card--parent .why__card p {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  line-height: 130%;
+  font-weight: 750;
+  margin-bottom: 4rem;
+}
+.why .container .why__card--parent .why__card a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 40%;
+}
+@media (min-width: 768px) {
+  .why .container .why__banner .banner__img--1 img {
+    display: unset;
+    width: 10%;
+    height: 10%;
+    margin-left: -80rem;
+  }
+  .why .container .why__banner .banner__img--2 img {
+    display: unset;
+    width: 10%;
+    height: 10%;
+    margin-right: -60rem;
+  }
+  .why .container .why__banner .why__title h1 {
+    font-weight: 900;
+    display: unset;
+    font-size: 90px;
+    line-height: 9rem;
+    margin-top: 10rem;
+  }
+  .why .container .why__banner .why__title p {
+    margin-top: 5rem;
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    width: 70rem;
+    margin-left: 25rem;
+  }
+  .why .container .why__card--parent {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+  .why .container .why__card--parent .why__card {
+    flex: 1;
+    margin: 0 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .why .container .why__card--parent .why__card h2 {
+    font-size: 13rem;
+  }
+  .why .container .why__card--parent .why__card small {
+    font-size: 10rem;
+  }
+  .why .container .why__card--parent .why__card p {
+    font-size: 20px;
+    justify-content: center;
+  }
+}
+
+.facts {
+  background: linear-gradient(to bottom, #560494, #510388);
+  padding: 7rem 0;
+}
+.facts .container .facts__wrapper {
+  text-align: center;
+}
+.facts .container .facts__wrapper .facts__title h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 1000;
+}
+.facts .container .facts__wrapper .facts__card--parent {
+  margin-top: 20px;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  border: solid transparent 1px;
+  border-radius: 5rem;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  padding: 5rem;
+  margin-bottom: 5rem;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card .card__text {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card .card__text h2 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 1000;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card .card__text p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  width: 40rem;
+  font-weight: 400;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card .card__img img {
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 10rem;
+}
+
 .unscroll {
   overflow: hidden;
 }
