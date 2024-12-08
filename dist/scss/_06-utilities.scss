@@ -93,22 +93,29 @@
             bottom: 0;
             font-size: 1.9rem;
             height: 70px;
+            &:hover{
+                box-shadow: 0 0 368.06px #8cd9ff, 0 0 184.03px #8cd9ff, 0 0 52.58px #8cd9ff, 0 0 56.29px #8cd9ff;
+            }
         
         
     }
     &.brightPink{
-        cursor: pointer;
+     
         transition: 0.1s ease;
         background-color: #ff6aef;
         color: $clr-dark;
         width: 190px;
         position: relative;
-        padding-top: 2rem;
+        cursor: pointer;
+        padding-top: 2rem 3rem;
         font-weight: 700;
         box-shadow: 0 0 368.06px #ff6aef,0 0 184.03px #ff6aef,0 0 52.58px #ff6aef,0 0 26.29px #ff6aef;
         bottom: 0;
         font-size: 1.9rem;
         height: 65px;
+        &:hover{
+            background-color: #2a0d1a;
+        }
     
     
 }
