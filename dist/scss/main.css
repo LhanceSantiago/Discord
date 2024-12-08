@@ -2286,6 +2286,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 998;
   position: relative;
   top: 10rem;
+  transition: 0.5s ease;
 }
 .subnav #activeDropdown {
   color: #15f5ba;
@@ -2321,6 +2322,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .subnav .quests__dropdown i {
   color: #ffffff;
+  cursor: pointer;
 }
 .subnav .quests__dropdown li {
   width: 100%;
@@ -2330,7 +2332,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 2rem;
   align-items: center;
   justify-content: center;
-  background-color: rgba(250, 247, 247, 0.3450980392);
+  background-color: rgba(37, 34, 34, 0.3725490196);
 }
 .subnav .quests__dropdown li:hover a {
   color: #15f5ba;
@@ -2351,5 +2353,115 @@ h1, h2, h3, h4, h5, h6 {
   }
   .subnav .quests__dropdown i {
     display: none;
+  }
+}
+
+.gameSlider {
+  padding: 10rem 0;
+}
+.gameSlider__items {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  transition: 0.5s ease;
+}
+.gameSlider__items img {
+  width: 30rem;
+  border-radius: 5rem;
+}
+.gameSlider__items.active p {
+  opacity: 100;
+}
+.gameSlider__items.active a {
+  opacity: 100;
+}
+.gameSlider__items.active .gameSlider__items--text {
+  top: 12rem;
+}
+.gameSlider__items--text {
+  left: 6rem;
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  top: 25rem;
+}
+.gameSlider__items--text h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  background-color: #ff8ff3;
+  padding: 1.5rem;
+}
+.gameSlider__items--text p {
+  width: 20rem;
+  font-size: 1.2rem;
+  opacity: 0;
+}
+.gameSlider__items--text a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  opacity: 0;
+}
+
+.blast {
+  background: linear-gradient(#2a0340 14%, #6004a7 70%);
+  padding: 15rem 0 0;
+}
+.blast .container {
+  padding-bottom: 0;
+}
+.blast__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+.blast__wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+.blast__wrapper img {
+  display: block;
+  width: 25rem;
+}
+.blast__wrapper h2 {
+  font-size: 4.4rem;
+  color: #ffffff;
+  font-weight: 900;
+  line-height: 4rem;
+}
+.blast__wrapper h2 br {
+  display: none;
+}
+@media screen and (min-width: 760px) {
+  .blast__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+  }
+  .blast__wrapper img {
+    width: 35rem;
+  }
+  .blast__text {
+    align-self: flex-start;
+  }
+  .blast__text h2 {
+    width: 50rem;
+    font-size: 5rem;
+  }
+  .blast__text h2 br {
+    display: unset;
   }
 }/*# sourceMappingURL=main.css.map */

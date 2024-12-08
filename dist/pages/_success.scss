@@ -1,0 +1,118 @@
+// .brightPink{
+//     height: unset;
+//     width: unset;
+//     padding: 2rem 5rem;
+//     transition: 0.5s ease;
+//     &:hover {
+//         background-color: #e1b5d2;;
+//     }
+// }
+.gameSlider{
+    padding: 10rem 0;
+    &__items {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        transition: 0.5s ease;
+        img {
+            width: 30rem;
+            border-radius: 5rem;
+        }
+        &.active { 
+            p {
+            opacity: 100;
+            }
+            a {
+                opacity: 100;
+            }
+            .gameSlider__items--text {
+                top: 12rem;
+            }
+        }   
+        &--text {
+            left: 6rem;
+            position: absolute;
+            width: fit-content;
+            color: $clr-light;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            top: 25rem;
+            h3 {
+                width: fit-content;
+                font-size: 1.5rem;
+                border-radius: 2rem;
+                background-color: $clr-purple;
+                padding: 1.5rem;
+            }
+            p {
+                width: 20rem;
+                font-size: 1.2rem;
+                opacity: 0;
+            }
+            a {
+                color: $clr-light;
+                font-size: 1.5rem;
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                opacity: 0;
+            }
+        }
+    }
+}
+.blast {
+    background: linear-gradient(#2a0340 14%, #6004a7 70%);
+    padding: 15rem 0 0;
+    .container {
+        padding-bottom: 0;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+    }
+    &__wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+        img {
+            display: block;
+            width: 25rem;
+        }
+
+        h2 {
+            br {
+                display: none;
+            }
+            font-size: 4.4rem;
+            color: $clr-light;
+            font-weight:900;
+            line-height: 4rem;
+     
+        }
+    }
+    @include mediaQuery($break-md) {
+        &__wrapper {
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            img {
+                width: 35rem;
+            }
+        }
+        &__text {
+            align-self: flex-start;
+            h2 {
+                br {
+                    display: unset;
+                }
+                width: 50rem;
+                font-size: 5rem;
+            }
+        }
+    }
+}
