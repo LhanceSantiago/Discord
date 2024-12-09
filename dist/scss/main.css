@@ -860,7 +860,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -2rem;
     display: flex;
     flex-direction: column;
-    margin-left: 35rem;
+    margin-right: -45rem;
   }
   .banner .container .banner__wrapper .banner__video--txt .banner__title {
     font-size: 6rem;
