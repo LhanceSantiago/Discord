@@ -842,6 +842,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 90%;
     z-index: -1;
     display: unset;
+    margin-top: -37rem;
   }
   .banner .container {
     justify-content: space-between;
@@ -860,7 +861,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -2rem;
     display: flex;
     flex-direction: column;
-    margin-left: 35rem;
+    margin-left: 40rem;
   }
   .banner .container .banner__wrapper .banner__video--txt .banner__title {
     font-size: 6rem;
