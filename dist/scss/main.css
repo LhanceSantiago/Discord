@@ -790,6 +790,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.nitro {
+  overflow-x: hidden;
+}
+
 .banner {
   background: linear-gradient(135deg, #5865f2, #ed61c1);
 }

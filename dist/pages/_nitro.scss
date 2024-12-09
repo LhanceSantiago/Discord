@@ -1,3 +1,6 @@
+.nitro {
+  overflow-x: hidden;
+}
 .banner {
   background: linear-gradient(135deg, #5865f2, #ed61c1);
 
@@ -333,7 +336,6 @@ and (min-width: $break-lg) {
     }
   }
 }
-
 
 .faq{
   padding: 20rem 0;
