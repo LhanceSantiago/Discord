@@ -2838,7 +2838,6 @@ h1, h2, h3, h4, h5, h6 {
 .gameSlider .gameSlider__items {
   opacity: 0.5;
   transform: scale(0.9);
-  transition: 2s ease;
 }
 .gameSlider .gameSlider__items p {
   opacity: 0;
@@ -2852,6 +2851,7 @@ h1, h2, h3, h4, h5, h6 {
 .gameSlider .gameSlider__items.single-active {
   opacity: 1;
   transform: scale(1);
+  transition: 2s ease;
 }
 .gameSlider .gameSlider__items.single-active p {
   opacity: 1;
@@ -2863,11 +2863,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 12rem;
 }
 .gameSlider__items {
+  transition: 2s ease;
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  transition: 0.5s ease;
 }
 .gameSlider__items img {
   width: 30rem;

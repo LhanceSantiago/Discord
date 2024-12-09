@@ -144,7 +144,6 @@
     .gameSlider__items {
         opacity: 0.5;
         transform: scale(0.9);
-        transition: 2s ease;
         p {
             opacity: 0;
         }
@@ -158,6 +157,7 @@
         &.single-active {
           opacity: 1;
           transform: scale(1);
+          transition: 2s ease;
           p {
             opacity: 1;
         }
@@ -170,10 +170,10 @@
         }
       }
     &__items {
+        transition: 2s ease;
         position: relative;
         width: fit-content;
         margin: 0 auto;
-        transition: 0.5s ease;
         img {
             width: 30rem;
             border-radius: 5rem;
