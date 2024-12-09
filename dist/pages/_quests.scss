@@ -1,6 +1,7 @@
 .quests{  
 background:  linear-gradient(#2a0340 14%,#6004a7 80%);
-padding-top: 15rem;
+padding-top: 20rem;
+padding-bottom: 5rem;
  &__wrapper{
     padding-bottom: 5rem;
     display: flex;
@@ -37,6 +38,7 @@ padding-top: 15rem;
         }
     }
     .quests__bg-img{
+        
         img{
           display: none;
         }
@@ -47,7 +49,7 @@ padding-top: 15rem;
             flex-direction: column-reverse;
             gap: 2rem;
             img{
-                width: 300px;
+                width: 410px;
                 margin: 0 auto;
             }
             .quests__text{
@@ -65,7 +67,7 @@ padding-top: 15rem;
                   margin: 1.38rem;
                   padding-top: 2rem;
                   color: $clr-light;
-                  font-size: 16px;
+                  font-size: 19px;
                   text-align: center;
                   font-weight: 600;
                     padding-bottom: 2rem;
@@ -87,7 +89,7 @@ padding-top: 15rem;
        
     }
     @include mediaQuery($break-md) {
-
+        margin-top: -12rem;
         &__link{
             padding-top: 0;
         }
@@ -103,7 +105,7 @@ padding-top: 15rem;
               margin: 0 auto;
               opacity: 40%;
               border: transparent;
-              border-radius: 10rem;
+              border-radius: 5rem;
             }
    
             }
@@ -156,23 +158,27 @@ padding-top: 15rem;
     &__title{
         color: $clr-light;
         text-align: center;
+        padding-bottom: 10rem;
         h2{
-            font-size: 1.6rem;
-            padding-left: 12rem;
+            font-size: 2rem;
             font-weight: 900;
         }
         h1{
-     
-          font-size: 4rem; 
-          width: 30rem;
-            line-height: 4.5rem;
+        font-size: 5rem; 
+         width: 30rem;
+        line-height: 4.5rem;
         margin: 0 auto;
         font-weight: 900;
-        padding-bottom: 8rem;
         span{
             color: $clr-green;
         }
+   
+
+        
         }
+    }
+    &__title-2{
+        display: none;
     }
     &__card{
         display: flex;
@@ -194,11 +200,11 @@ padding-top: 15rem;
         }
         h3{
             padding-top: 2rem;
-            font-size: 2.5rem;
-
+            font-size: 3.3rem;
+            width: 31.9rem;
             margin: 0 auto;
             font-weight: 900;
-            line-height: 2.5rem;
+            line-height: 3rem;
             padding-bottom: 2.5rem;
             span{
                 color: $clr-green;
@@ -212,16 +218,35 @@ padding-top: 15rem;
         }
       }
       @include mediaQuery($break-md){
+        padding-bottom: 7rem;
         &__title{
+       display: none;
+        }
+        &__title-2{
+            padding-bottom: 8rem;
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             h2{
-                padding: 0;
-              
+                color: $clr-light;
+                font-weight: 900;
+                font-size: 1.9rem;
+                
             }
             h1{
-                width: unset;
-                font-size: 4.5rem;
+                margin-top: -1.5rem;
+                font-size: 5rem;
+                font-weight: 900;
+                color: $clr-light;
+                span{
+                    color: $clr-green;
+                }
             }
+
         }
+        &
         &__card{
             display: unset;
             display: flex;
@@ -244,7 +269,7 @@ padding-top: 15rem;
                 img{
                     width: unset;
                     width: 40rem;
-                    border-radius: 14rem;
+                    border-radius: 10rem;
                     margin: 0 auto;
                 }
             }
@@ -261,7 +286,7 @@ padding-top: 15rem;
     background:   linear-gradient(#2a0340 14%,#4b0481 80%,);
     padding-bottom: -5rem;
     &__wrapper{
-     padding-bottom: 20rem;
+     padding-bottom: 15rem;
         h6{
             font-size: 5rem;
             text-align: center;
@@ -282,10 +307,10 @@ padding-top: 15rem;
     &__items{
         color: $clr-light;
         background:   linear-gradient(#360c4f 14%,#921e86d3 80%);
-        width: 44.5rem;
-        border-radius: 7.6rem;
+        width: 43rem;
+        border-radius: 9rem;
         margin: 0 auto;
-        height: 300px;
+        height: 390px;
         overflow: hidden;
         
     }
@@ -296,21 +321,22 @@ padding-top: 15rem;
         background:   linear-gradient(#360c4f 14%,#784de5 80%);
     }
     &__text{
-        padding-top: 11rem;
-        margin: 3rem;
+        padding-top: 15rem;
+        margin: 3.5rem;
         z-index: 3;
         position: relative;
         h1{
             padding-top: 2rem;
             font-weight: 900;
-            padding-bottom: 1rem;
-            font-size: 2.8rem;
+            padding-bottom: 2rem;
+            font-size: 3rem;
+            width: 23rem;
             line-height: 2.4rem;
         }
         p{
             font-weight: 600;
             font-size: 1.38rem;
-            width: 38rem;
+            width: 30rem;
         }
      }
      &__img{
@@ -320,34 +346,36 @@ padding-top: 15rem;
             opacity: 65%;
         }
         #g1{
-             bottom: 30rem;
-            left: 19rem;
-            width: 28rem;
+             bottom: 40rem;
+            left: 12rem;
+            width: 36rem;
         }
         #g2{
-            bottom: 30rem;
-            width: 22rem;
+            bottom: 36.3rem;
+            width: 29rem;
             transform: rotate(34deg);
-            left: 20rem;
+            left: 12.5rem;
             z-index: 2;
 
         
         }
         #g3{
-            bottom: 35rem;
-            width: 20rem;
+            bottom: 74rem;
+            transform: rotate(-10deg);
+            width: 30rem;
             z-index: 1;
+            left: 15rem;
         }
         #g4{
-            bottom: 30rem;
-            width: 20.5rem;
-            left: 21rem;
+            bottom: 40.5rem;
+            width: 25rem;
+            left: 15rem;
         }
         #g5{
-            bottom: 35rem;
-            left: 8rem;
-            transform: rotate(5deg);
-            width: 35rem;
+            bottom: 42rem;
+            left: 0rem;
+            transform: rotate(-1deg);
+            width: 41.5rem;
         }
      }
   
@@ -365,7 +393,7 @@ padding-top: 15rem;
          
         }
         &__text{
-            margin-top: .7rem;
+            margin-top: -5rem;
             h1{
                 font-size: 4.2rem;
                 line-height: 3.5rem;
@@ -403,7 +431,7 @@ padding-top: 15rem;
                 width: 28rem;
             }
             #g5{
-                left: 10rem;
+                left: 17.7rem;
                 transform: rotate(1deg);
             }
         }
@@ -509,8 +537,8 @@ padding-top: 15rem;
         img{
             width: 125px;
             position: relative;
-            left: 31rem;
-            top: -3.4rem;
+            left: 30rem;
+            top: -2.4rem;
         }
 
     }
@@ -521,20 +549,21 @@ padding-top: 15rem;
     margin-top: -7rem;
     }
     &__content-item{
-     
+        margin-top: 2rem;
         color: $clr-light;
-        width: 43rem;
-        height: 17.2rem;
+        width: 41rem;
+        height: 21.5rem;
         margin: 0 auto;
         padding: 2.5rem;
         border-radius: 5rem;
-         background:   linear-gradient(#360c4f 14%,#784de5 80%);
+         background:   linear-gradient(#6020a9 14%,#784de5 80%);
         h2{
             padding-top: 1.2rem;
             font-weight: 900;
-            font-size: 2.7rem;
+            font-size: 3rem;
             line-height: 3rem;
             padding-bottom: 2rem;
+            width: 30rem;
         }
         h3{
             font-size: 1.6rem;
@@ -602,9 +631,9 @@ padding-top: 15rem;
     }
     &__text{
         h1{
-            font-size: 5rem;
+            font-size: 6rem;
             font-weight: 900;
-            width: 30rem;
+            width: 35rem;
             line-height: 4.7rem;
             margin: 0 auto;
             padding-bottom: 2rem;
@@ -716,7 +745,7 @@ padding-top: 15rem;
     position: relative;
     z-index: 3;
     background:   linear-gradient(#2a0340 14%,#6004a7 80%);
-    margin-bottom: -2rem;
+
     .bgStar{
         position: absolute;
         img{
@@ -740,15 +769,28 @@ padding-top: 15rem;
         padding-top: 8rem;
 
         h1{
-            font-size: 5rem;
+            font-size: 6rem;
             font-weight: 900;
             width: 40rem;
             margin: 0 auto;
-            line-height: 4rem;
+            line-height: 5rem;
             padding-bottom: 7rem;
         }
+        
+            .brightPink{
+                height: unset;
+                width: unset;
+                padding: 2rem 5rem;
+                transition: 0.5s ease;
+                z-index: 5;
+                &:hover {
+                    background-color: #e1b5d2;;
+                }
+            }
+        
     }
     @include mediaQuery($break-md){
+        margin-bottom: 10rem;
         .bgStar{
             position: unset;
             display: flex;
