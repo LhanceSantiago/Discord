@@ -1,3 +1,4 @@
+// tabs
 const faqNav = document.querySelectorAll('.faq_tab');
 const faqContent = document.querySelectorAll('.faq_content--body');
 
@@ -21,6 +22,7 @@ faqNav.forEach((faq) => {
         });
         
     }
+
 const questions = document.querySelectorAll(".faq_content--text h3");
 questions.forEach(question => {
     question.addEventListener("click", () => {

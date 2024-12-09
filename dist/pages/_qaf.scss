@@ -43,7 +43,7 @@
 }
 
 
-.faq{
+.qaf{
   background:   linear-gradient(#2a0340 14%,#4b0481 80%);
   h2{
     color: $clr-light;
@@ -62,11 +62,11 @@
   }
 
   
-  .faq-item {
+  .qaf-item {
     margin-bottom: 10px;
   }
 
-  .faq-question {
+  .qaf-question {
  background:   linear-gradient(#571388ea 1%,#784de5 70%);
     color: white;
     padding: 42px 25px;
@@ -87,7 +87,7 @@
 
   }
 
-  .faq-answer {
+  .qaf-answer {
     display: none;
     position: relative;
     background:   linear-gradient(#784de5 14%,#784de5 70%);
@@ -107,7 +107,7 @@
     }
   }
 
-  .faq-answer.open {
+  .qaf-answer.open {
     display: block;
   }
   .plus-icon{
@@ -124,11 +124,11 @@
 
   
   @include mediaQuery($break-md){
-    .faq-answer{
+    .qaf-answer{
         width: unset;
     }
 
-    .faq-question{
+    .qaf-question{
       h1{
         font-size: 2.2rem;
         font-weight: 600;
@@ -141,7 +141,7 @@
         padding-top: 3rem;
         padding-bottom: 0;
       }
-      .faq-img{
+      .qaf-img{
         img{
           display: block;
           position: absolute;
