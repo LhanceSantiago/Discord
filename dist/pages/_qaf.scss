@@ -5,53 +5,59 @@
   }
 }
 
-
 .guide{
   background-image: linear-gradient(#4b0f78 14%, #37095b 70%);
   color: $clr-light;
   text-align: center;
-  padding: 20rem 0;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
 &__wrapper{
   display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   h1{
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 900;
+    width: 26rem;
+    text-align: center;
     padding-bottom: 2rem;
-    line-height: 4rem;
+    line-height: 5rem;
+
   }
   p{
     font-size: 1.8rem;
     font-weight: 600;
+    width: 40rem;
   }
 }
 @include mediaQuery($break-md){
   &__wrapper{
     padding-bottom: 0;
-    padding-bottom: 13rem;
+    padding-bottom: 7rem;
     h1{
       font-size: 9rem;
+      width: unset;
       padding-bottom: 5rem;
     }
     p{
       font-size: 2.1rem;
       font-weight: 500;
+      width: unset;
     }
   }
 }
 }
 
-
-.faq{
+.qaf{
+  overflow: visible;
   background:   linear-gradient(#2a0340 14%,#4b0481 80%);
   h2{
     color: $clr-light;
     text-align: center;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 900;
     padding-bottom: 2rem;
-
   }
   &__wrapper{
     padding-top: 7rem;
@@ -62,11 +68,11 @@
   }
 
   
-  .faq-item {
-    margin-bottom: 10px;
+  .qaf-item {
+    margin-bottom: 17px;
   }
 
-  .faq-question {
+  .qaf-question {
  background:   linear-gradient(#571388ea 1%,#784de5 70%);
     color: white;
     padding: 42px 25px;
@@ -87,11 +93,11 @@
 
   }
 
-  .faq-answer {
+  .qaf-answer {
     display: none;
     position: relative;
     background:   linear-gradient(#784de5 14%,#784de5 70%);
-    padding: 35px;
+    padding: 25px;
     z-index: 2;
     width: fit-content;
     color: $clr-light;
@@ -107,7 +113,7 @@
     }
   }
 
-  .faq-answer.open {
+  .qaf-answer.open {
     display: block;
   }
   .plus-icon{
@@ -124,11 +130,12 @@
 
   
   @include mediaQuery($break-md){
-    .faq-answer{
+    .qaf-answer{
         width: unset;
+
     }
 
-    .faq-question{
+    .qaf-question{
       h1{
         font-size: 2.2rem;
         font-weight: 600;
@@ -139,23 +146,24 @@
       h2{
         font-size: 6rem;
         padding-top: 3rem;
-        padding-bottom: 0;
+        padding-bottom: 3rem;
       }
-      .faq-img{
+      .qaf-img{
         img{
           display: block;
           position: absolute;
         }
         #clyde{
-          top: 43rem;
+          top: 50rem;
           width: 215px;
         }
         #wumpus{
-          bottom: 28.9rem;
+          bottom: 32.3rem;
           left: 85rem;
-          width: 27rem;
+          width: 26rem;
           position: relative;
-          margin-bottom: -35rem;
+          z-index: 999;
+          margin-bottom: -38.3rem;
         }
 
       }

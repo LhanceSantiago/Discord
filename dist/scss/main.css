@@ -148,15 +148,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 190px;
   position: relative;
   cursor: pointer;
-  padding-top: 2rem 3rem;
+  padding-top: 2rem;
   font-weight: 700;
   box-shadow: 0 0 368.06px #ff6aef, 0 0 184.03px #ff6aef, 0 0 52.58px #ff6aef, 0 0 26.29px #ff6aef;
   bottom: 0;
   font-size: 1.9rem;
   height: 65px;
-}
-.btn.brightPink:hover {
-  background-color: #2a0d1a;
 }
 
 .landing {
@@ -1194,6 +1191,7 @@ h1, h2, h3, h4, h5, h6 {
 .quests {
   background: linear-gradient(#2a0340 14%, #6004a7 80%);
   padding-top: 20rem;
+  padding-bottom: 5rem;
 }
 .quests__wrapper {
   padding-bottom: 5rem;
@@ -1237,7 +1235,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 2rem;
 }
 .quests__banner .quests__content img {
-  width: 300px;
+  width: 410px;
   margin: 0 auto;
 }
 .quests__banner .quests__content .quests__text h1 {
@@ -1253,7 +1251,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.38rem;
   padding-top: 2rem;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 19px;
   text-align: center;
   font-weight: 600;
   padding-bottom: 2rem;
@@ -1266,6 +1264,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 @media screen and (min-width: 760px) {
+  .quests {
+    margin-top: -12rem;
+  }
   .quests__link {
     padding-top: 0;
   }
@@ -1281,7 +1282,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     opacity: 40%;
     border: transparent;
-    border-radius: 10rem;
+    border-radius: 5rem;
   }
   .quests__banner {
     margin-top: 0;
@@ -1326,22 +1327,24 @@ h1, h2, h3, h4, h5, h6 {
 .work__title {
   color: #ffffff;
   text-align: center;
+  padding-bottom: 10rem;
 }
 .work__title h2 {
-  font-size: 1.6rem;
-  padding-left: 12rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 .work__title h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   width: 30rem;
   line-height: 4.5rem;
   margin: 0 auto;
   font-weight: 900;
-  padding-bottom: 8rem;
 }
 .work__title h1 span {
   color: #15f5ba;
+}
+.work__title-2 {
+  display: none;
 }
 .work__card {
   display: flex;
@@ -1360,10 +1363,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .work__item h3 {
   padding-top: 2rem;
-  font-size: 2.5rem;
+  font-size: 3.3rem;
+  width: 31.9rem;
   margin: 0 auto;
   font-weight: 900;
-  line-height: 2.5rem;
+  line-height: 3rem;
   padding-bottom: 2.5rem;
 }
 .work__item h3 span {
@@ -1374,14 +1378,35 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5rem;
 }
 @media screen and (min-width: 760px) {
-  .work__title h2 {
-    padding: 0;
+  .work {
+    padding-bottom: 7rem;
   }
-  .work__title h1 {
-    width: unset;
-    font-size: 4.5rem;
+  .work__title {
+    display: none;
   }
-  .work__card {
+  .work__title-2 {
+    padding-bottom: 8rem;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .work__title-2 h2 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1.9rem;
+  }
+  .work__title-2 h1 {
+    margin-top: -1.5rem;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ffffff;
+  }
+  .work__title-2 h1 span {
+    color: #15f5ba;
+  }
+  .work .work__card {
     display: unset;
     display: flex;
     flex-direction: row;
@@ -1400,7 +1425,7 @@ h1, h2, h3, h4, h5, h6 {
   .work__item .work__img img {
     width: unset;
     width: 40rem;
-    border-radius: 14rem;
+    border-radius: 10rem;
     margin: 0 auto;
   }
 }
@@ -1410,7 +1435,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: -5rem;
 }
 .gamer__wrapper {
-  padding-bottom: 20rem;
+  padding-bottom: 15rem;
 }
 .gamer__wrapper h6 {
   font-size: 5rem;
@@ -1429,10 +1454,10 @@ h1, h2, h3, h4, h5, h6 {
 .gamer__items {
   color: #ffffff;
   background: linear-gradient(#360c4f 14%, rgba(146, 30, 134, 0.8274509804) 80%);
-  width: 44.5rem;
-  border-radius: 7.6rem;
+  width: 43rem;
+  border-radius: 9rem;
   margin: 0 auto;
-  height: 300px;
+  height: 390px;
   overflow: hidden;
 }
 .gamer #bgc1 {
@@ -1442,22 +1467,23 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(#360c4f 14%, #784de5 80%);
 }
 .gamer__text {
-  padding-top: 11rem;
-  margin: 3rem;
+  padding-top: 15rem;
+  margin: 3.5rem;
   z-index: 3;
   position: relative;
 }
 .gamer__text h1 {
   padding-top: 2rem;
   font-weight: 900;
-  padding-bottom: 1rem;
-  font-size: 2.8rem;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  width: 23rem;
   line-height: 2.4rem;
 }
 .gamer__text p {
   font-weight: 600;
   font-size: 1.38rem;
-  width: 38rem;
+  width: 30rem;
 }
 .gamer__img img {
   position: relative;
@@ -1465,32 +1491,34 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 65%;
 }
 .gamer__img #g1 {
-  bottom: 30rem;
-  left: 19rem;
-  width: 28rem;
+  bottom: 40rem;
+  left: 12rem;
+  width: 36rem;
 }
 .gamer__img #g2 {
-  bottom: 30rem;
-  width: 22rem;
+  bottom: 36.3rem;
+  width: 29rem;
   transform: rotate(34deg);
-  left: 20rem;
+  left: 12.5rem;
   z-index: 2;
 }
 .gamer__img #g3 {
-  bottom: 35rem;
-  width: 20rem;
+  bottom: 74rem;
+  transform: rotate(-10deg);
+  width: 30rem;
   z-index: 1;
+  left: 15rem;
 }
 .gamer__img #g4 {
-  bottom: 30rem;
-  width: 20.5rem;
-  left: 21rem;
+  bottom: 40.5rem;
+  width: 25rem;
+  left: 15rem;
 }
 .gamer__img #g5 {
-  bottom: 35rem;
-  left: 8rem;
-  transform: rotate(5deg);
-  width: 35rem;
+  bottom: 42rem;
+  left: 0rem;
+  transform: rotate(-1deg);
+  width: 41.5rem;
 }
 @media screen and (min-width: 980px) {
   .gamer__cards {
@@ -1505,7 +1533,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 12rem;
   }
   .gamer__text {
-    margin-top: 0.7rem;
+    margin-top: -5rem;
   }
   .gamer__text h1 {
     font-size: 4.2rem;
@@ -1544,7 +1572,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 28rem;
   }
   .gamer__img #g5 {
-    left: 10rem;
+    left: 17.7rem;
     transform: rotate(1deg);
   }
 }
@@ -1636,8 +1664,8 @@ h1, h2, h3, h4, h5, h6 {
 .effect__title img {
   width: 125px;
   position: relative;
-  left: 31rem;
-  top: -3.4rem;
+  left: 30rem;
+  top: -2.4rem;
 }
 .effect__content {
   display: flex;
@@ -1646,20 +1674,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -7rem;
 }
 .effect__content-item {
+  margin-top: 2rem;
   color: #ffffff;
-  width: 43rem;
-  height: 17.2rem;
+  width: 41rem;
+  height: 21.5rem;
   margin: 0 auto;
   padding: 2.5rem;
   border-radius: 5rem;
-  background: linear-gradient(#360c4f 14%, #784de5 80%);
+  background: linear-gradient(#6020a9 14%, #784de5 80%);
 }
 .effect__content-item h2 {
   padding-top: 1.2rem;
   font-weight: 900;
-  font-size: 2.7rem;
+  font-size: 3rem;
   line-height: 3rem;
   padding-bottom: 2rem;
+  width: 30rem;
 }
 .effect__content-item h3 {
   font-size: 1.6rem;
@@ -1721,9 +1751,9 @@ h1, h2, h3, h4, h5, h6 {
   gap: 7rem;
 }
 .promoted__text h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 900;
-  width: 30rem;
+  width: 35rem;
   line-height: 4.7rem;
   margin: 0 auto;
   padding-bottom: 2rem;
@@ -1820,7 +1850,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 3;
   background: linear-gradient(#2a0340 14%, #6004a7 80%);
-  margin-bottom: -2rem;
 }
 .rocket .bgStar {
   position: absolute;
@@ -1845,14 +1874,27 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 8rem;
 }
 .rocket__wrapper h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 900;
   width: 40rem;
   margin: 0 auto;
-  line-height: 4rem;
+  line-height: 5rem;
   padding-bottom: 7rem;
 }
+.rocket__wrapper .brightPink {
+  height: unset;
+  width: unset;
+  padding: 2rem 5rem;
+  transition: 0.5s ease;
+  z-index: 5;
+}
+.rocket__wrapper .brightPink:hover {
+  background-color: #e1b5d2;
+}
 @media screen and (min-width: 760px) {
+  .rocket {
+    margin-bottom: 10rem;
+  }
   .rocket .bgStar {
     position: unset;
     display: flex;
@@ -1902,59 +1944,67 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(#4b0f78 14%, #37095b 70%);
   color: #ffffff;
   text-align: center;
-  padding: 20rem 0;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
 }
 .guide__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .guide__wrapper h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 900;
+  width: 26rem;
+  text-align: center;
   padding-bottom: 2rem;
-  line-height: 4rem;
+  line-height: 5rem;
 }
 .guide__wrapper p {
   font-size: 1.8rem;
   font-weight: 600;
+  width: 40rem;
 }
 @media screen and (min-width: 760px) {
   .guide__wrapper {
     padding-bottom: 0;
-    padding-bottom: 13rem;
+    padding-bottom: 7rem;
   }
   .guide__wrapper h1 {
     font-size: 9rem;
+    width: unset;
     padding-bottom: 5rem;
   }
   .guide__wrapper p {
     font-size: 2.1rem;
     font-weight: 500;
+    width: unset;
   }
 }
 
-.faq {
+.qaf {
+  overflow: visible;
   background: linear-gradient(#2a0340 14%, #4b0481 80%);
 }
-.faq h2 {
+.qaf h2 {
   color: #ffffff;
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 900;
   padding-bottom: 2rem;
 }
-.faq__wrapper {
+.qaf__wrapper {
   padding-top: 7rem;
   padding-bottom: 8rem;
 }
-.faq__wrapper img {
+.qaf__wrapper img {
   display: none;
 }
-.faq .faq-item {
-  margin-bottom: 10px;
+.qaf .qaf-item {
+  margin-bottom: 17px;
 }
-.faq .faq-question {
+.qaf .qaf-question {
   background: linear-gradient(rgba(87, 19, 136, 0.9176470588) 1%, #784de5 70%);
   color: white;
   padding: 42px 25px;
@@ -1965,17 +2015,17 @@ h1, h2, h3, h4, h5, h6 {
   text-align: start;
   align-items: center;
 }
-.faq .faq-question h1 {
+.qaf .qaf-question h1 {
   font-size: 1.7rem;
   font-weight: 600;
   position: relative;
   z-index: 4;
 }
-.faq .faq-answer {
+.qaf .qaf-answer {
   display: none;
   position: relative;
   background: linear-gradient(#784de5 14%, #784de5 70%);
-  padding: 35px;
+  padding: 25px;
   z-index: 2;
   width: -moz-fit-content;
   width: fit-content;
@@ -1986,50 +2036,51 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
-.faq .faq-answer p {
+.qaf .qaf-answer p {
   font-size: 1.48rem;
 }
-.faq .faq-answer p span {
+.qaf .qaf-answer p span {
   text-decoration: underline;
 }
-.faq .faq-answer.open {
+.qaf .qaf-answer.open {
   display: block;
 }
-.faq .plus-icon {
+.qaf .plus-icon {
   transition: 0.5s ease;
   font-weight: 700;
   font-size: 28px;
 }
-.faq .plus-icon.rotate {
+.qaf .plus-icon.rotate {
   transform: rotate(90deg);
 }
 @media screen and (min-width: 760px) {
-  .faq .faq-answer {
+  .qaf .qaf-answer {
     width: unset;
   }
-  .faq .faq-question h1 {
+  .qaf .qaf-question h1 {
     font-size: 2.2rem;
     font-weight: 600;
   }
-  .faq__wrapper h2 {
+  .qaf__wrapper h2 {
     font-size: 6rem;
     padding-top: 3rem;
-    padding-bottom: 0;
+    padding-bottom: 3rem;
   }
-  .faq__wrapper .faq-img img {
+  .qaf__wrapper .qaf-img img {
     display: block;
     position: absolute;
   }
-  .faq__wrapper .faq-img #clyde {
-    top: 43rem;
+  .qaf__wrapper .qaf-img #clyde {
+    top: 50rem;
     width: 215px;
   }
-  .faq__wrapper .faq-img #wumpus {
-    bottom: 28.9rem;
+  .qaf__wrapper .qaf-img #wumpus {
+    bottom: 32.3rem;
     left: 85rem;
-    width: 27rem;
+    width: 26rem;
     position: relative;
-    margin-bottom: -35rem;
+    z-index: 999;
+    margin-bottom: -38.3rem;
   }
 }
 
