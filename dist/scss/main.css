@@ -893,7 +893,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cta .cta__card {
   background: linear-gradient(135deg, #0072ff, #00c6ff);
-  border-radius: 2rem;
+  border-radius: 4rem;
   color: #ffffff;
   width: 100%;
   margin-bottom: 3rem;
