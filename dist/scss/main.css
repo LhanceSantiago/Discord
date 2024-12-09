@@ -2038,9 +2038,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0;
   transition: 0.2s ease;
 }
-.header.purple {
-  background: linear-gradient(#2a0340 14%, #6004a7 70%);
-}
 .header.white {
   background: transparent;
   color: #ffffff;
@@ -2139,6 +2136,9 @@ h1, h2, h3, h4, h5, h6 {
   .header.white {
     height: 0;
     padding: 0;
+  }
+  .header.purple {
+    background: linear-gradient(#2a0340 14%, #6004a7 70%);
   }
   .header__wrapper .toggle__menu {
     display: none;
@@ -2357,7 +2357,93 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gameSlider {
+  background: #6004a7;
   padding: 10rem 0;
+  position: relative;
+}
+.gameSlider .tns-nav-active {
+  transition: 0.5s ease;
+  width: 3rem;
+}
+.gameSlider__title {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  color: #ffffff;
+  text-align: center;
+}
+.gameSlider__title h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 3rem;
+  width: 20rem;
+}
+.gameSlider__icons {
+  display: flex;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.gameSlider__nav {
+  z-index: 4;
+  top: 37rem;
+  left: 14rem;
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+}
+.gameSlider__nav span {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10rem;
+  background-color: rgba(208, 203, 203, 0.6509803922);
+}
+.gameSlider__btn {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  gap: 120rem;
+  right: 13rem;
+  top: 28rem;
+}
+.gameSlider__btn i {
+  cursor: pointer;
+  background-color: rgba(208, 203, 203, 0.6509803922);
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+}
+.gameSlider__btn i:hover {
+  background-color: rgba(223, 214, 214, 0.8156862745);
+}
+.gameSlider .gameSlider__items {
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: 2s ease;
+}
+.gameSlider .gameSlider__items p {
+  opacity: 0;
+}
+.gameSlider .gameSlider__items a {
+  opacity: 0;
+}
+.gameSlider .gameSlider__items .gameSlider__items--text {
+  top: 25rem;
+}
+.gameSlider .gameSlider__items.single-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.gameSlider .gameSlider__items.single-active p {
+  opacity: 1;
+}
+.gameSlider .gameSlider__items.single-active a {
+  opacity: 1;
+}
+.gameSlider .gameSlider__items.single-active .gameSlider__items--text {
+  top: 12rem;
 }
 .gameSlider__items {
   position: relative;
@@ -2370,15 +2456,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 30rem;
   border-radius: 5rem;
 }
-.gameSlider__items.active p {
-  opacity: 100;
-}
-.gameSlider__items.active a {
-  opacity: 100;
-}
-.gameSlider__items.active .gameSlider__items--text {
-  top: 12rem;
-}
 .gameSlider__items--text {
   left: 6rem;
   position: absolute;
@@ -2388,7 +2465,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  top: 25rem;
 }
 .gameSlider__items--text h3 {
   width: -moz-fit-content;
@@ -2401,7 +2477,6 @@ h1, h2, h3, h4, h5, h6 {
 .gameSlider__items--text p {
   width: 20rem;
   font-size: 1.2rem;
-  opacity: 0;
 }
 .gameSlider__items--text a {
   color: #ffffff;
@@ -2409,7 +2484,27 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   gap: 1rem;
   align-items: center;
-  opacity: 0;
+}
+@media screen and (min-width: 760px) {
+  .gameSlider__title {
+    padding: 3rem 0;
+  }
+  .gameSlider__title h2 {
+    font-size: 5rem;
+    width: auto;
+  }
+  .gameSlider__items img {
+    width: 35rem;
+  }
+  .gameSlider__btn {
+    top: 20rem;
+    left: -8rem;
+  }
+  .gameSlider__nav {
+    z-index: 2;
+    top: 42rem;
+    left: 55rem;
+  }
 }
 
 .blast {
@@ -2435,6 +2530,15 @@ h1, h2, h3, h4, h5, h6 {
 .blast__wrapper img {
   display: block;
   width: 25rem;
+}
+.blast__wrapper .brightPink {
+  height: unset;
+  width: unset;
+  padding: 2rem 5rem;
+  transition: 0.5s ease;
+}
+.blast__wrapper .brightPink:hover {
+  background-color: #e1b5d2;
 }
 .blast__wrapper h2 {
   font-size: 4.4rem;
