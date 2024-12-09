@@ -36,4 +36,3 @@ questions.forEach(question => {
         OtherAnswers(question);
     });
 });
-firstDropdowns();

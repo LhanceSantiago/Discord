@@ -798,15 +798,10 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(135deg, #5865f2, #ed61c1);
 }
 .banner video {
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -1;
   display: none;
 }
 .banner .container {
   max-width: 35rem;
-  margin: 0 auto;
   padding: 50rem 0rem;
   display: flex;
   align-items: center;
@@ -822,16 +817,12 @@ h1, h2, h3, h4, h5, h6 {
 .banner .container .banner__wrapper img {
   width: 80%;
 }
-.banner .container .banner__wrapper .banner__video--txt {
-  max-width: 600px;
-  text-align: center;
-  margin-top: -10rem;
-}
 .banner .container .banner__wrapper .banner__video--txt .banner__title {
   font: Montserrat, "Montserrat", sans-serif;
   font-weight: 1000;
   line-height: 0.9;
   color: #ffffff;
+  margin-bottom: 2rem;
 }
 .banner .container .banner__wrapper .banner__video--txt h1 {
   font-size: 4rem;
@@ -843,14 +834,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
-@media screen and (min-width: 980px) {
+@media (min-width: 980px) {
   .banner {
     display: unset;
   }
   .banner video {
-    overflow: hidden;
-    width: -moz-fit-content;
-    width: fit-content;
+    -o-object-fit: cover;
+       object-fit: cover;
     position: absolute;
     width: 100%;
     height: 90%;
@@ -858,10 +848,12 @@ h1, h2, h3, h4, h5, h6 {
     display: unset;
   }
   .banner .container {
-    flex-direction: row;
     justify-content: space-between;
     max-width: none;
-    margin-right: -50rem;
+  }
+  .banner .container .banner__wrapper {
+    display: flex;
+    flex-direction: row;
   }
   .banner .container .banner__wrapper .banner__img {
     display: none;
@@ -870,7 +862,9 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     display: unset;
     margin-top: -2rem;
-    margin-left: -8rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35rem;
   }
   .banner .container .banner__wrapper .banner__video--txt .banner__title {
     font-size: 6rem;
@@ -903,60 +897,64 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cta .cta__card {
   background: linear-gradient(135deg, #0072ff, #00c6ff);
-  border-radius: 3rem;
-  padding: 6rem 5.3rem;
+  border-radius: 4rem;
   color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   width: 100%;
   margin-bottom: 3rem;
+  padding: 10rem 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 .cta .cta__card .cta__card--title h1 {
   font-size: 3rem;
   font-weight: 1000;
-  margin-top: -2rem;
-  margin-left: -4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font: Montserrat, "Montserrat", sans-serif;
 }
 .cta .cta__card ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
-  margin-bottom: 5rem;
-  margin-left: -4rem;
+  width: 35rem;
 }
 .cta .cta__card ul li {
   font-size: 1.8rem;
   font-weight: 300;
-  margin-bottom: 1rem;
+  text-align: center;
   display: flex;
+  margin-bottom: 2rem;
 }
 .cta .cta__card ul li i {
   margin-right: 1rem;
   color: #ffffff;
+  font-size: 2.5rem;
 }
 .cta .cta__card a {
   display: inline-block;
   margin-top: 1.5rem;
-  padding: 1rem 15rem;
+  padding: 1rem 10rem;
   font-size: 1.5rem;
   font-weight: 800;
   color: #23272a;
   background: #ffffff;
   border-radius: 2rem;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 .cta .cta__card a:hover {
   background: #ffffff;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media screen and (min-width: 980px) {
+@media (min-width: 980px) {
   .cta .cta__wrapper .cta__card--parent {
+    display: unset;
     display: flex;
     flex-direction: row;
     gap: 10rem;
+  }
+  .cta .cta__wrapper .cta__card--parent .cta__card {
+    padding: 10rem 7rem;
   }
 }
 .perks {
@@ -1011,7 +1009,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0c0d0e;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 980px) {
   .perks .perks__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1050,7 +1048,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.4s ease-in;
 }
 
-@media screen and (min-width: 980px) {
+@media (min-width: 980px) {
   .cta2__wrapper {
     flex-direction: row;
     align-items: center;
@@ -1076,7 +1074,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 2rem;
   width: 45rem;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 980px) {
   .faq_content--body {
     width: 40vw;
     margin-left: 20rem;
@@ -1130,7 +1128,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.6rem;
   text-align: left;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 980px) {
   .faq_tabs {
     display: flex;
     justify-content: center;
@@ -1147,7 +1145,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.6rem;
   width: 100%;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 980px) {
   .faq_tabs ul {
     display: flex;
     flex-direction: row;
@@ -1170,7 +1168,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   margin: 1rem;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 980px) {
   .faq_cards {
     display: flex;
     flex-direction: row;
@@ -1182,7 +1180,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 980px) {
   .faq_item {
     display: block;
     align-items: center;
@@ -1886,6 +1884,240 @@ h1, h2, h3, h4, h5, h6 {
     left: 50rem;
     width: 30rem;
     bottom: -1.8rem;
+  }
+}
+
+.why {
+  padding: 10rem 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #560494, #510388);
+  color: #ffffff;
+  font-family: Inter, "Inter", sans-serif;
+}
+.why .container .why__banner .banner__img--1 img {
+  height: 20%;
+  width: 20%;
+  margin-right: 40rem;
+}
+.why .container .why__banner .banner__img--2 img {
+  height: 20%;
+  width: 20%;
+  margin-left: 35rem;
+  margin-top: -10rem;
+}
+.why .container .why__banner .why__title img {
+  display: none;
+}
+.why .container .why__banner .why__title h1 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 auto;
+  width: 45rem;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+  line-height: 6rem;
+}
+.why .container .why__banner .why__title p {
+  font-size: 1.8rem;
+  font: Inter, "Inter", sans-serif;
+  margin-bottom: 8rem;
+}
+.why .container .why__card--parent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.why .container .why__card--parent .why__card {
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+.why .container .why__card--parent .why__card h2 {
+  font-size: 8rem;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 1000;
+  background: linear-gradient(to right, #ffffff, #9b9090);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.why .container .why__card--parent .why__card p {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  line-height: 130%;
+  font-weight: 750;
+  margin-bottom: 4rem;
+}
+.why .container .why__card--parent .why__card a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 40%;
+}
+@media (min-width: 980px) {
+  .why .container .why__banner .banner__img--1 img {
+    display: unset;
+    width: 10%;
+    height: 10%;
+    margin-left: -80rem;
+  }
+  .why .container .why__banner .banner__img--2 img {
+    display: unset;
+    width: 10%;
+    height: 10%;
+    margin-right: -60rem;
+  }
+  .why .container .why__banner .why__title h1 {
+    font-weight: 900;
+    display: unset;
+    font-size: 90px;
+    line-height: 9rem;
+    margin-top: 10rem;
+  }
+  .why .container .why__banner .why__title p {
+    margin-top: 5rem;
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    width: 70rem;
+    margin-left: 25rem;
+  }
+  .why .container .why__card--parent {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+  .why .container .why__card--parent .why__card {
+    flex: 1;
+    margin: 0 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .why .container .why__card--parent .why__card h2 {
+    font-size: 13rem;
+  }
+  .why .container .why__card--parent .why__card small {
+    font-size: 10rem;
+  }
+  .why .container .why__card--parent .why__card p {
+    font-size: 20px;
+    justify-content: center;
+  }
+}
+
+.facts {
+  background: linear-gradient(to bottom, #560494, #510388);
+  padding: 7rem 0;
+}
+.facts .container .facts__wrapper {
+  text-align: center;
+}
+.facts .container .facts__wrapper .facts__title h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 1000;
+}
+.facts .container .facts__wrapper .facts__card--parent {
+  margin-top: 20px;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 15rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 5rem;
+  margin-bottom: 5rem;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card.facts__card:first-child {
+  background: linear-gradient(to bottom, #50048B, #080614);
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card.facts__card:nth-child(2) {
+  background: linear-gradient(to bottom, #2A0240, #85258C);
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card.facts__card:nth-child(3) {
+  background: linear-gradient(to bottom, #611eff, #420075);
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card.facts__card:nth-child(3) .card__img {
+  margin-left: -5rem;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card .card__img img {
+  width: auto;
+  max-width: 45rem;
+  height: auto;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card .card__text {
+  text-align: justify;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card .card__text h2 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: 1000;
+}
+.facts .container .facts__wrapper .facts__card--parent .facts__card .card__text p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+@media (min-width: 980px) {
+  .facts .container .facts__wrapper .facts__card--parent .facts__card {
+    padding: 10rem 10rem;
+    border-radius: 15rem;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:first-child {
+    background: linear-gradient(to bottom, #50048B, #080614);
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:first-child .card__text h2 {
+    font-size: 5rem;
+    font-weight: 1000;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:first-child .card__text p {
+    font-size: 2rem;
+    max-width: 31rem;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(2) {
+    background: linear-gradient(to bottom, #2A0240, #85258C);
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(2) .card__text h2 {
+    font-size: 5rem;
+    font-weight: 1000;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(2) .card__text p {
+    font-size: 2rem;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(3) {
+    background: linear-gradient(to bottom, #846FFF, #6104A6);
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(3) .card__img img {
+    width: auto;
+    height: 200%;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(3) .card__text h2 {
+    line-height: 5rem;
+    font-size: 5rem;
+    font-weight: 1000;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(3) .card__text p {
+    font-size: 2rem;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(even) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(odd) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(odd) .card__text {
+    order: 1;
+  }
+  .facts .container .facts__wrapper .facts__card--parent .facts__card:nth-child(odd) .card__img {
+    order: 2;
   }
 }
 

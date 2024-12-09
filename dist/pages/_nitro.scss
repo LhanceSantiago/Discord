@@ -5,16 +5,11 @@
   background: linear-gradient(135deg, #5865f2, #ed61c1);
 
   video{
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
     display: none;
   }
 
   .container {
-  
     max-width:35rem;
-    margin: 0 auto;
     padding: 50rem 0rem; 
     display: flex;
     align-items: center;
@@ -30,15 +25,12 @@
       width: 80%;
      }
       .banner__video--txt {
-        max-width: 600px; 
-        text-align: center;
-        margin-top: -10rem;
         .banner__title {
           font:$ff-secondary;
           font-weight: 1000;
           line-height: .9;
           color: $clr-light;
-        
+          margin-bottom: 2rem;
         }
         h1{
           font-size: 4rem;
@@ -54,16 +46,11 @@
     }
   }
 }
-
-
-@media screen 
-and (min-width: $break-lg) {
+@media (min-width:$break-lg) {
   .banner{
     display: unset;
-   
     video{
-      overflow: hidden;
-      width: fit-content;
+      object-fit: cover;
       position: absolute;   
       width: 100%; 
       height: 90%;
@@ -73,12 +60,12 @@ and (min-width: $break-lg) {
      
     }
   .container {
-    flex-direction: row; 
     justify-content: space-between; 
     max-width: none;
-    margin-right: -50rem;
-   
+  
     .banner__wrapper {
+      display: flex;
+      flex-direction: row;
       .banner__img{
         display: none;
       }
@@ -87,8 +74,9 @@ and (min-width: $break-lg) {
         text-align: left; 
         display: unset;
         margin-top: -2rem;
-        margin-left: -8rem;
-    
+        display: flex;
+        flex-direction: column;
+        margin-left: 35rem;
         .banner__title {
           font-size: 6rem;
           max-width: 40rem; 
@@ -105,6 +93,7 @@ and (min-width: $break-lg) {
   }
 }
 }
+
 .cta {
  
   .cta__wrapper {
@@ -130,38 +119,39 @@ and (min-width: $break-lg) {
 
   .cta__card {
     background: linear-gradient(135deg, #0072ff, #00c6ff);
-    border-radius: 3rem;
-    padding: 6rem 5.3rem;
-
+    border-radius: 4rem;
     color: $clr-light;
-    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
     width: 100%;
     margin-bottom: 3rem;
-    .cta__card--title h1 {
-      font-size: 3rem;
-      font-weight:1000;
-      margin-top: -2rem;
-      margin-left: -4rem;
-      margin-bottom:3rem;
-      font: $ff-secondary;
+    padding: 10rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    .cta__card--title {
+      h1{
+        font-size: 3rem;
+        font-weight:1000;
+        margin-bottom: 2rem;
+        font: $ff-secondary;
+      }
+   
     }
 
     ul {
+      
       list-style: none;
       padding: 0;
-      margin: 1rem 0;
-      margin-bottom: 5rem;
-      margin-left: -4rem;
+      width: 35rem;
       li {
         font-size: 1.8rem;
         font-weight: 300;
-        margin-bottom: 1rem;
+        text-align: center;
         display: flex;
-    
+        margin-bottom: 2rem;
         
         i {
           margin-right: 1rem;
           color: $clr-light;
+          font-size: 2.5rem;
         }
       }
     }
@@ -169,31 +159,39 @@ and (min-width: $break-lg) {
     a {
       display: inline-block;
       margin-top: 1.5rem;
-      padding: 1rem 15rem;
+      padding: 1rem 10rem;
       font-size: 1.5rem;
       font-weight: 800;
       color: $clr-dark;
       background: $clr-light;
       border-radius: 2rem;
       text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-      transition: background 0.3s ease, box-shadow 0.3s ease;
-
+      text-align: center;
       &:hover {
         background: $clr-light;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+        transition: background 0.3s ease, box-shadow 0.3s ease;
       }
     }
   }
 }
 
-@media screen and (min-width:$break-lg) {
+
+
+@media (min-width:$break-lg) {
   .cta{
     .cta__wrapper{
       
     .cta__card--parent{
+      display: unset;
       display: flex;
       flex-direction: row;
       gap: 10rem;
+      .cta__card{
+        padding: 10rem 7rem;
+ 
+      }
+ 
     }
   }
 }
@@ -259,7 +257,7 @@ and (min-width: $break-lg) {
         }
   }
 }
-@media (min-width: 760px) {
+@media (min-width:$break-lg) {
   .perks {
     .perks__wrapper {
       display: grid;
@@ -324,7 +322,7 @@ and (min-width: $break-lg) {
 }}
 
 
-@media screen and (min-width:$break-lg) {
+@media (min-width:$break-lg) {
   .cta2 {
     &__wrapper {
       flex-direction: row;
@@ -356,7 +354,7 @@ and (min-width: $break-lg) {
       
       width: 45rem;
  
-      @include mediaQuery($break-md){
+      @include mediaQuery($break-lg){
           width: 40vw;
         
           margin-left: 20rem;
@@ -421,7 +419,7 @@ and (min-width: $break-lg) {
   }
 }
   &_tabs{
-      @include mediaQuery($break-md){
+      @include mediaQuery($break-lg){
           display: flex;
           justify-content: center;
           color: $clr-dark;
@@ -436,7 +434,7 @@ and (min-width: $break-lg) {
           font-weight: 500;
           font-size: 1.6rem;
           width: 100%;
-          @include mediaQuery($break-md){
+          @include mediaQuery($break-lg){
               display: flex;
               flex-direction: row;
               width: 100%;
@@ -458,7 +456,7 @@ and (min-width: $break-lg) {
       display: flex;
       flex-direction: column;
       margin: 1rem;
-      @include mediaQuery($break-md){
+      @include mediaQuery($break-lg){
           display: flex;
           flex-direction: row;
           gap: 4rem;
@@ -468,7 +466,7 @@ and (min-width: $break-lg) {
       display: flex;
       justify-content: center;
       align-items: center;  
-      @include mediaQuery($break-md){
+      @include mediaQuery($break-lg){
           display: block;
           align-items: center;
         
