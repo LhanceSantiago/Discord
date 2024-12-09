@@ -22,7 +22,6 @@
     &.white {
         background-color: $clr-light;
         color: $clr-dark;
-        padding: 1rem 1.5rem;
         &:hover {
             color: $clr-secondary;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -36,7 +35,7 @@
         }
     }
     &.blueBright {
-        transition: 0.1s ease;
+        transition: 0.3s ease;
         background-color: $clr-secondary;
         color: $clr-light;
         position: relative;
@@ -67,4 +66,49 @@
             box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
         }
     }
+    &.brightGreen{
+            cursor: pointer;
+            transition: 0.1s ease;
+            background-color: $clr-green;
+            color: $clr-dark;
+            padding: 1.6rem 3rem;
+            position: relative;
+            box-shadow: rgba(13, 215, 195, 0.796) 0px 0px 70px 15px;
+            bottom: 0;
+            &:hover {
+                background-color: #15dda8;
+            }
+        
+    }
+    &.skyblue{
+            cursor: pointer;
+            transition: 0.1s ease;
+            background-color: #8cd9ff;
+            color: $clr-dark;
+            width: 270px;
+            position: relative;
+            padding-top: 2rem;
+            box-shadow: 0 0 368.06px #8cd9ff, 0 0 184.03px #8cd9ff, 0 0 52.58px #8cd9ff, 0 0 26.29px #8cd9ff;
+            bottom: 0;
+            font-size: 1.9rem;
+            height: 70px;
+        
+        
+    }
+    &.brightPink{
+        cursor: pointer;
+        transition: 0.1s ease;
+        background-color: #ff6aef;
+        color: $clr-dark;
+        width: 190px;
+        position: relative;
+        padding-top: 2rem;
+        font-weight: 700;
+        box-shadow: 0 0 368.06px #ff6aef,0 0 184.03px #ff6aef,0 0 52.58px #ff6aef,0 0 26.29px #ff6aef;
+        bottom: 0;
+        font-size: 1.9rem;
+        height: 65px;
+    
+    
+}
 } 
