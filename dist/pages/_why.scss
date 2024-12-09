@@ -172,6 +172,7 @@
 
       .facts__title {
         h1 {
+          
           font-size: 5rem;
           margin-bottom: 10px;
           color: $clr-light;
@@ -205,9 +206,10 @@
           }
           }
           .card__img {
+            justify-content: center;
             img {
               width: auto;
-              max-width: 45rem;
+              max-width: 40rem;
               height: auto;
             }
           }
