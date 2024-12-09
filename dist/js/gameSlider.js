@@ -24,7 +24,7 @@ var slider = tns({
 
   slider.events.on('indexChanged', function () {
     const allSlides = document.querySelectorAll('.gameSlider__items');
-    const activeIndex = slider.getInfo().index; // Get the current active index
+    const activeIndex = slider.getInfo().index;
     allSlides.forEach((slide, index) => {
       if (index === activeIndex) {
         slide.classList.add('single-active');
