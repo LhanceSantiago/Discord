@@ -54,12 +54,14 @@
       z-index: -1;
       display: unset;
       margin-top: -37rem;
+
     }
   .container {
     justify-content: space-between; 
     max-width: none;
   
     .banner__wrapper {
+     
       display: flex;
       flex-direction: row;
       
